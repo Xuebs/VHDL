@@ -18,12 +18,13 @@ architecture arch of registers_min_max is
 	variable reg2: std_logic_vector(3 downto 0);
 	variable reg3: std_logic_vector(3 downto 0);
 	variable reg4: std_logic_vector(3 downto 0);
+	
 begin
-	updateReg: process (clk)
-	begin
-		maxout (3'left downto 0) := din (3'left downto 0);
+	updateReg: process (clk) is
+		begin
+			maxout (3'left downto 0) := din (3'left downto 0);
 		
-	end process;
+		end process updateReg;
 
 end arch;
 	
