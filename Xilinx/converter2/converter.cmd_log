@@ -1,0 +1,7 @@
+ngdbuild -ise "/nfs/home/x/x_ti/Modelsim/Xilinx/converter2/converter2.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "converter.edf" converter.ngd
+map -ise "/nfs/home/x/x_ti/Modelsim/Xilinx/converter2/converter2.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o converter_map.ncd converter.ngd converter.pcf
+ngdbuild -ise "/nfs/home/x/x_ti/Modelsim/Xilinx/converter2/converter2.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "converter.edf" converter.ngd
+map -ise "/nfs/home/x/x_ti/Modelsim/Xilinx/converter2/converter2.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o converter_map.ncd converter.ngd converter.pcf
+par -ise "/nfs/home/x/x_ti/Modelsim/Xilinx/converter2/converter2.ise" -w -intstyle ise -ol std -t 1 converter_map.ncd converter.ncd converter.pcf
+trce -ise "/nfs/home/x/x_ti/Modelsim/Xilinx/converter2/converter2.ise" -intstyle ise -e 3 -s 7 -xml converter converter.ncd -o converter.twr converter.pcf -ucf converter.ucf
+bitgen -ise "/nfs/home/x/x_ti/Modelsim/Xilinx/converter2/converter2.ise" -intstyle ise -f converter.ut converter.ncd

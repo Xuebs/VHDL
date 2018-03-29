@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map K.31 on Wed Mar 14 15:48:22 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "twos_comp(3)" LOCATE = SITE "AC4" LEVEL 1;
+COMP "twos_comp(0)" LOCATE = SITE "AA5" LEVEL 1;
+COMP "twos_comp(1)" LOCATE = SITE "AA6" LEVEL 1;
+COMP "twos_comp(2)" LOCATE = SITE "AC3" LEVEL 1;
+COMP "sign_mag(0)" LOCATE = SITE "AF9" LEVEL 1;
+COMP "sign_mag(1)" LOCATE = SITE "AF8" LEVEL 1;
+COMP "sign_mag(2)" LOCATE = SITE "AD11" LEVEL 1;
+COMP "sign_mag(3)" LOCATE = SITE "AC11" LEVEL 1;
+SCHEMATIC END;
+

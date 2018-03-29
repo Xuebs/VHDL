@@ -1,0 +1,50 @@
+(edif keith 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2018 03 01 02 36 09)
+   (program "Precision RTL Synthesis " (version "64-bit 2016.1.0.15"))
+   (author "Mentor Graphics Corporation")))
+ (external xcv2p 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell OBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell IBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT))))))
+ (library work 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell keith (cellType GENERIC)
+   (view rtl  (viewType NETLIST)
+    (interface 
+     (port input_1 (direction INPUT))
+     (port output (direction OUTPUT)))
+    (property AREA (string "0.000000"))
+    (property DESIGN_IS_RTL (string "NO"))
+    (property PART (string "2VP30ff896-7"))
+    (contents 
+     (instance output_obuf (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance input_1_ibuf (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (net input_1 
+      (joined 
+       (portRef input_1 )
+       (portRef I (instanceRef input_1_ibuf ))))
+     (net input_1_int 
+      (joined 
+       (portRef O (instanceRef input_1_ibuf ))
+       (portRef I (instanceRef output_obuf ))))
+     (net output 
+      (joined 
+       (portRef output )
+       (portRef O (instanceRef output_obuf ))))))))
+ (design keith (cellRef keith (libraryRef work ))
+  (property PART (string "2VP30ff896-7"))))

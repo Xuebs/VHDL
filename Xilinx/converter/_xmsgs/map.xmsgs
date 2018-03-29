@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="MapLib" num="562" delta="unknown" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="unknown" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="error" file="Pack" num="679" delta="unknown" ><arg fmt="%z" index="1">Unable to obey design constraints (LOC=AA5) which require the combination of the following symbols into a single IOB component:
+	BUF symbol &quot;twos_comp_obuf(0)&quot; (Output Signal = twos_comp(0))
+	PAD symbol &quot;twos_comp(0)&quot; (Pad Signal = twos_comp(0))
+	PAD symbol &quot;sign_mag(0)&quot; (Pad Signal = sign_mag(0))</arg>
+<arg fmt="%z" index="2">More than one pad symbol.</arg>  Please correct the design constraints accordingly.
+</msg>
+
+<msg type="error" file="Pack" num="679" delta="unknown" ><arg fmt="%z" index="1">Unable to obey design constraints (LOC=AA6) which require the combination of the following symbols into a single IOB component:
+	BUF symbol &quot;twos_comp_obuf(1)&quot; (Output Signal = twos_comp(1))
+	PAD symbol &quot;twos_comp(1)&quot; (Pad Signal = twos_comp(1))
+	PAD symbol &quot;sign_mag(1)&quot; (Pad Signal = sign_mag(1))</arg>
+<arg fmt="%z" index="2">More than one pad symbol.</arg>  Please correct the design constraints accordingly.
+</msg>
+
+</messages>
+

@@ -1,0 +1,10 @@
+CONFIG STEPPING="0";
+NET sign_mag(3) LOC = AC11;
+NET sign_mag(2) LOC = AD11;
+NET sign_mag(1) LOC = AA6;
+NET sign_mag(0) LOC = AA5;
+NET twos_comp(3) LOC = AC4;
+NET twos_comp(2) LOC = AC3;
+NET twos_comp(1) LOC = AA6;
+NET twos_comp(0) LOC = AA5;
+

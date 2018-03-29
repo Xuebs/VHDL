@@ -1,0 +1,83 @@
+(edif sum_of_minterms 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2018 03 01 01 35 07)
+   (program "Precision RTL Synthesis " (version "64-bit 2016.1.0.15"))
+   (author "Mentor Graphics Corporation")))
+ (external xcv2p 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell OBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell IBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell LUT3 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I0 (direction INPUT))
+     (port I1 (direction INPUT))
+     (port I2 (direction INPUT))
+     (port O (direction OUTPUT))))))
+ (library work 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell sum_of_minterms (cellType GENERIC)
+   (view arch  (viewType NETLIST)
+    (interface 
+     (port a (direction INPUT))
+     (port b (direction INPUT))
+     (port c (direction INPUT))
+     (port output_end (direction OUTPUT)))
+    (property AREA (string "1.000000"))
+    (property DESIGN_IS_RTL (string "NO"))
+    (property PART (string "2VP30ff896-7"))
+    (contents 
+     (instance output_end_obuf (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance c_ibuf (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance b_ibuf (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance a_ibuf (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance ix54922z1522 (viewRef NETLIST  (cellRef LUT3 (libraryRef xcv2p )))
+      (property INIT (string "D0")))
+     (net a 
+      (joined 
+       (portRef a )
+       (portRef I (instanceRef a_ibuf ))))
+     (net b 
+      (joined 
+       (portRef b )
+       (portRef I (instanceRef b_ibuf ))))
+     (net c 
+      (joined 
+       (portRef c )
+       (portRef I (instanceRef c_ibuf ))))
+     (net a_int 
+      (joined 
+       (portRef O (instanceRef a_ibuf ))
+       (portRef I0 (instanceRef ix54922z1522 ))))
+     (net b_int 
+      (joined 
+       (portRef O (instanceRef b_ibuf ))
+       (portRef I1 (instanceRef ix54922z1522 ))))
+     (net c_int 
+      (joined 
+       (portRef O (instanceRef c_ibuf ))
+       (portRef I2 (instanceRef ix54922z1522 ))))
+     (net output_end 
+      (joined 
+       (portRef output_end )
+       (portRef O (instanceRef output_end_obuf ))))
+     (net output_end_dup_0 
+      (joined 
+       (portRef O (instanceRef ix54922z1522 ))
+       (portRef I (instanceRef output_end_obuf ))))))))
+ (design sum_of_minterms (cellRef sum_of_minterms (libraryRef work ))
+  (property PART (string "2VP30ff896-7"))))

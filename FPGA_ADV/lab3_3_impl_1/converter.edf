@@ -1,0 +1,141 @@
+(edif converter 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2018 03 14 20 20 08)
+   (program "Precision RTL Synthesis " (version "64-bit 2016.1.0.15"))
+   (author "Mentor Graphics Corporation")))
+ (external xcv2p 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell OBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell IBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell LUT1 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I0 (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell LUT4 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I0 (direction INPUT))
+     (port I1 (direction INPUT))
+     (port I2 (direction INPUT))
+     (port I3 (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell LUT3 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I0 (direction INPUT))
+     (port I1 (direction INPUT))
+     (port I2 (direction INPUT))
+     (port O (direction OUTPUT))))))
+ (library work 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell converter (cellType GENERIC)
+   (view arch  (viewType NETLIST)
+    (interface 
+     (port (array (rename sign_mag "sign_mag(3:0)") 4 )(direction INPUT))
+     (port (array (rename twos_comp "twos_comp(3:0)") 4 )(direction OUTPUT)))
+    (property AREA (string "4.000000"))
+    (property DESIGN_IS_RTL (string "NO"))
+    (property PART (string "2VP30ff896-7"))
+    (contents 
+     (instance (rename twos_comp_obuf_0_ "twos_comp_obuf(0)") (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance (rename twos_comp_obuf_1_ "twos_comp_obuf(1)") (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance (rename twos_comp_obuf_2_ "twos_comp_obuf(2)") (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance (rename twos_comp_obuf_3_ "twos_comp_obuf(3)") (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance (rename sign_mag_ibuf_0_ "sign_mag_ibuf(0)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance (rename sign_mag_ibuf_1_ "sign_mag_ibuf(1)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance (rename sign_mag_ibuf_2_ "sign_mag_ibuf(2)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance (rename sign_mag_ibuf_3_ "sign_mag_ibuf(3)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance ix17334z1315 (viewRef NETLIST  (cellRef LUT1 (libraryRef xcv2p )))
+      (property INIT (string "1")))
+     (instance ix18331z40629 (viewRef NETLIST  (cellRef LUT4 (libraryRef xcv2p )))
+      (property INIT (string "9993")))
+     (instance ix19328z1461 (viewRef NETLIST  (cellRef LUT3 (libraryRef xcv2p )))
+      (property INIT (string "93")))
+     (instance ix20325z1315 (viewRef NETLIST  (cellRef LUT1 (libraryRef xcv2p )))
+      (property INIT (string "1")))
+     (net (rename sign_mag_3_ "sign_mag(3)") 
+      (joined 
+       (portRef (member sign_mag 0))
+       (portRef I (instanceRef sign_mag_ibuf_3_ ))))
+     (net (rename sign_mag_2_ "sign_mag(2)") 
+      (joined 
+       (portRef (member sign_mag 1))
+       (portRef I (instanceRef sign_mag_ibuf_2_ ))))
+     (net (rename sign_mag_1_ "sign_mag(1)") 
+      (joined 
+       (portRef (member sign_mag 2))
+       (portRef I (instanceRef sign_mag_ibuf_1_ ))))
+     (net (rename sign_mag_0_ "sign_mag(0)") 
+      (joined 
+       (portRef (member sign_mag 3))
+       (portRef I (instanceRef sign_mag_ibuf_0_ ))))
+     (net (rename sign_mag_int_3_ "sign_mag_int(3)") 
+      (joined 
+       (portRef O (instanceRef sign_mag_ibuf_3_ ))
+       (portRef I0 (instanceRef ix17334z1315 ))
+       (portRef I0 (instanceRef ix18331z40629 ))
+       (portRef I0 (instanceRef ix19328z1461 ))))
+     (net (rename sign_mag_int_2_ "sign_mag_int(2)") 
+      (joined 
+       (portRef O (instanceRef sign_mag_ibuf_2_ ))
+       (portRef I1 (instanceRef ix18331z40629 ))))
+     (net (rename sign_mag_int_1_ "sign_mag_int(1)") 
+      (joined 
+       (portRef O (instanceRef sign_mag_ibuf_1_ ))
+       (portRef I1 (instanceRef ix19328z1461 ))
+       (portRef I2 (instanceRef ix18331z40629 ))))
+     (net (rename sign_mag_int_0_ "sign_mag_int(0)") 
+      (joined 
+       (portRef O (instanceRef sign_mag_ibuf_0_ ))
+       (portRef I0 (instanceRef ix20325z1315 ))
+       (portRef I3 (instanceRef ix18331z40629 ))
+       (portRef I2 (instanceRef ix19328z1461 ))))
+     (net (rename twos_comp_0_ "twos_comp(0)") 
+      (joined 
+       (portRef (member twos_comp 3))
+       (portRef O (instanceRef twos_comp_obuf_0_ ))))
+     (net (rename twos_comp_1_ "twos_comp(1)") 
+      (joined 
+       (portRef (member twos_comp 2))
+       (portRef O (instanceRef twos_comp_obuf_1_ ))))
+     (net (rename twos_comp_2_ "twos_comp(2)") 
+      (joined 
+       (portRef (member twos_comp 1))
+       (portRef O (instanceRef twos_comp_obuf_2_ ))))
+     (net (rename twos_comp_3_ "twos_comp(3)") 
+      (joined 
+       (portRef (member twos_comp 0))
+       (portRef O (instanceRef twos_comp_obuf_3_ ))))
+     (net (rename twos_comp_dup_0_3_ "twos_comp_dup_0(3)") 
+      (joined 
+       (portRef O (instanceRef ix17334z1315 ))
+       (portRef I (instanceRef twos_comp_obuf_3_ ))))
+     (net (rename twos_comp_dup_0_2_ "twos_comp_dup_0(2)") 
+      (joined 
+       (portRef O (instanceRef ix18331z40629 ))
+       (portRef I (instanceRef twos_comp_obuf_2_ ))))
+     (net (rename twos_comp_dup_0_1_ "twos_comp_dup_0(1)") 
+      (joined 
+       (portRef O (instanceRef ix19328z1461 ))
+       (portRef I (instanceRef twos_comp_obuf_1_ ))))
+     (net (rename twos_comp_dup_0_0_ "twos_comp_dup_0(0)") 
+      (joined 
+       (portRef O (instanceRef ix20325z1315 ))
+       (portRef I (instanceRef twos_comp_obuf_0_ ))))))))
+ (design converter (cellRef converter (libraryRef work ))
+  (property PART (string "2VP30ff896-7"))))

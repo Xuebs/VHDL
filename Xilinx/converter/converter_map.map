@@ -1,0 +1,39 @@
+Release 10.1 Map K.31 (lin64)
+Xilinx Map Application Log File for Design 'converter'
+
+Design Information
+------------------
+Command Line   : map -ise
+/nfs/home/x/x_ti/Modelsim/Xilinx/converter/converter.ise -intstyle ise -p
+xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o converter_map.ncd
+converter.ngd converter.pcf 
+Target Device  : xc2vp30
+Target Package : ff896
+Target Speed   : -7
+Stepping Level : 0
+Mapper Version : virtex2p -- $Revision: 1.46 $
+Mapped Date    : Wed Mar 14 15:36:12 2018
+
+Mapping design into LUTs...
+Running directed packing...
+ERROR:Pack:679 - Unable to obey design constraints (LOC=AA5) which require the
+   combination of the following symbols into a single IOB component:
+   	BUF symbol "twos_comp_obuf(0)" (Output Signal = twos_comp(0))
+   	PAD symbol "twos_comp(0)" (Pad Signal = twos_comp(0))
+   	PAD symbol "sign_mag(0)" (Pad Signal = sign_mag(0))
+   More than one pad symbol.  Please correct the design constraints accordingly.
+ERROR:Pack:679 - Unable to obey design constraints (LOC=AA6) which require the
+   combination of the following symbols into a single IOB component:
+   	BUF symbol "twos_comp_obuf(1)" (Output Signal = twos_comp(1))
+   	PAD symbol "twos_comp(1)" (Pad Signal = twos_comp(1))
+   	PAD symbol "sign_mag(1)" (Pad Signal = sign_mag(1))
+   More than one pad symbol.  Please correct the design constraints accordingly.
+
+Mapping completed.
+See MAP report file "converter_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   0

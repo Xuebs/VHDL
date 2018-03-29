@@ -1,0 +1,2 @@
+UNISIM "/CMC/tools/xilinx_10.1/ISE/vhdl/src/unisims/unisim_VCOMP.vhd" -2002
+work "/nfs/home/x/x_ti/Modelsim/FPGA_ADV/../Code/converter.vhd" -2002
