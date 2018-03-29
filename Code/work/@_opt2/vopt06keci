@@ -1,0 +1,173 @@
+m255
+K3
+T_opt2
+Z0 VjPj^gai=7l5gmQajl28Mi2
+Z1 04 9 4 work converter arch 1
+Z2 =1-308d996205c8-5aaad885-12286-98b8
+Z3 o-quiet -auto_acc_if_foreign -work work
+Z4 n@_opt2
+Z5 OL;O;6.6g;45
+Econverter
+Z6 w1521058738
+Z7 DPx17 __model_tech/ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z8 DPx17 __model_tech/ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z9 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+Z10 d/home/x/x_ti/Modelsim/Code
+Z11 8converter.vhd
+Z12 Fconverter.vhd
+l0
+L5
+Z13 VNK?RVH`0d[S^RSi4M0gM?1
+Z14 OL;C;6.6g;45
+Z15 tExplicit 1
+Z16 !s100 :>[ic[:7gHS957SCakoN_0
+Aarch
+R7
+R8
+R9
+DEx35 /nfs/home/x/x_ti/Modelsim/Code/work 9 converter 0 22 NK?RVH`0d[S^RSi4M0gM?1
+32
+Mx3 17 __model_tech/ieee 14 std_logic_1164
+Mx2 17 __model_tech/ieee 18 std_logic_unsigned
+Mx1 17 __model_tech/ieee 15 std_logic_arith
+l13
+L11
+Z17 VDA;bBaI^4bm4UE=?CSaN_2
+R14
+R15
+Z18 !s100 E?7z3kXG6SL988NTdDO041
+Eis_this_good_ou_mauvaise
+Z19 w1521050866
+Z20 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+R10
+Z21 8l3q1.vhd
+Z22 Fl3q1.vhd
+l0
+L4
+Z23 VkFoNQJl8c>zO;0d0:f6[_0
+R14
+32
+Z24 o-check_synthesis
+R15
+Z25 !s100 f78i=o=>^eF9Hg7?8k=Kn2
+Ekeith
+Z26 w1519871654
+R20
+R10
+Z27 8q5.vhd
+Z28 Fq5.vhd
+l0
+L4
+Z29 VG^G53]H@Zo3XFJSU>C;jV0
+R14
+32
+R15
+Z30 !s100 [KhDbRhagGeE86Pd?jW@50
+Artl
+R20
+Z31 DEx4 work 5 keith 0 22 G^G53]H@Zo3XFJSU>C;jV0
+l13
+L9
+Z32 V2@?ZAda7;OXzmi8:fTERj3
+R14
+32
+Z33 Mx1 4 ieee 14 std_logic_1164
+R15
+Z34 !s100 XHf^kfKGo>_LGnS?EllaK3
+Esum_of_minterms
+Z35 w1519867924
+R20
+R10
+Z36 8sum_of_minterms_csa.vhd
+Z37 Fsum_of_minterms_csa.vhd
+l0
+L4
+Z38 VM?N78bRg184lhhEclF:gF3
+R14
+32
+R15
+Z39 !s100 fbeEE]b305nRdK6YVV5cL0
+Aarch
+R20
+Z40 DEx4 work 15 sum_of_minterms 0 22 M?N78bRg184lhhEclF:gF3
+l15
+L9
+Z41 VLS=X2oMOnjK<?3MQ=Y`oW0
+R14
+32
+R33
+R15
+Z42 !s100 `1]efSG9XKPM5elVcf[7]0
+Esum_of_minterms_csa
+Z43 w1519869011
+R20
+R10
+R36
+R37
+l0
+L4
+Z44 VMZdfiQE;UbjC]gOYBgJbh0
+R14
+32
+R15
+Z45 !s100 2=kZoo6j[L>E<_BhIlahJ3
+Aarch
+R20
+Z46 DEx4 work 19 sum_of_minterms_csa 0 22 MZdfiQE;UbjC]gOYBgJbh0
+l15
+L9
+Z47 VXG?Hba?6b7GEnUehzmA]C3
+R14
+32
+R33
+R15
+Z48 !s100 `CGg@na9<LohP_DKzMbBC0
+Eted_and3
+Z49 w1518040241
+R20
+R10
+Z50 8tedand3.vhd
+Z51 Ftedand3.vhd
+l0
+L4
+Z52 VB`6`LOg2OcnVWfUnPlL^Z3
+R14
+32
+R15
+Z53 !s100 @6Ak?2^kdX=JVBnLO>fQ53
+Ated_arch
+R20
+Z54 DEx4 work 8 ted_and3 0 22 B`6`LOg2OcnVWfUnPlL^Z3
+l9
+L8
+Z55 VMB;adbaNed=FHXZD]Y5D]2
+R14
+32
+R33
+R15
+Z56 !s100 ^aTWTb_UoQ?e`CHXgHl:41
+Eted_or3
+Z57 w1518039351
+R20
+R10
+Z58 8tedor3.vhd
+Z59 Ftedor3.vhd
+l0
+L4
+Z60 VQ`>go3IAC8LY2Nh?@d5>K1
+R14
+32
+R15
+Z61 !s100 k8@20K3Y^W4>n>2IDGa013
+Ated_arch
+R20
+Z62 DEx4 work 7 ted_or3 0 22 Q`>go3IAC8LY2Nh?@d5>K1
+l9
+L8
+Z63 V;_zQ:cS0a?F:=_7aT87[n0
+R14
+32
+R33
+R15
+Z64 !s100 hfJC3?j[ePGPVh7KW5BDW3
