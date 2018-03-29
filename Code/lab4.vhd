@@ -22,7 +22,7 @@ begin
 		variable reg4 : std_logic_vector(3 downto 0);
 
 		begin
-			maxout (3'left downto 0) := din (3'left downto 0);
+			max_out (3 downto 0) <= din (3 downto 0);
 		
 	end process updateReg;
 
