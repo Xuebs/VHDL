@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-entity registers_min_max is
+entity lab4 is
 	port ( 	din 	: 	in std_logic_vector(3 downto 0);
 			sel	:	in std_logic_vector(1 downto 0);
 			reset 	: 	in std_logic;
@@ -10,9 +10,9 @@ entity registers_min_max is
 			max_out	:	out std_logic_vector(3 downto 0);
 			min_out	:	out std_logic_vector(3 downto 0);
 			reg_out	:	out std_logic_vector(3 downto 0));
-end registers_min_max;
+end lab4;
 
-architecture arch of registers_min_max is
+architecture arch of lab4 is
 
 begin
 	updateReg: process (clk) is
