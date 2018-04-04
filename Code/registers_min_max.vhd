@@ -18,6 +18,8 @@ signal register1 : std_logic_vector(3 downto 0);
 signal register2 : std_logic_vector(3 downto 0);
 signal register3 : std_logic_vector(3 downto 0);
 signal register4 : std_logic_vector(3 downto 0);
+signal maxRegister : std_logic_vector(3 downto 0);
+signal minRegister : std_logic_vector(3 downto 0);
 
 begin
 	updateReg: process (clk, reset) is
@@ -77,7 +79,7 @@ begin
 
 	begin
 		tempMax(3 downto 0) := register1(3 downto 0);
-		maxComp(3 downto 0) := max_out(3 downto 0)
+		maxComp(3 downto 0) := maxRegister(3 downto 0);
 			
 		if (register1 < register2) then
 			tempMax(3 downto 0) := register2 (3 downto 0);
@@ -92,7 +94,7 @@ begin
 		end if;
 		
 		if (maxComp < tempMax) then
-			max_out(3 downto 0) <= tempMax(3 downto 0);
+			maxRegister(3 downto 0) <= tempMax(3 downto 0);
 		end if;
 
 	end process maxOut;
@@ -105,7 +107,7 @@ begin
 
 	begin
 		tempMin(3 downto 0) := register1(3 downto 0);
-		minComp(3 downto 0) := min_out(3 downto 0)
+		minComp(3 downto 0) := minRegister(3 downto 0);
 
 		if (register1 > register2) then
 			tempMin(3 downto 0) := register2 (3 downto 0);
@@ -120,8 +122,11 @@ begin
 		end if;
 		
 		if(minComp > tempMin) then
-			min_out(3 downto 0) <= tempMin(3 downto 0);	
+			minRegister(3 downto 0) <= tempMin(3 downto 0);	
 		end if;
 	end process minOut;	
+
+	max_out (3 downto 0) <= maxRegister (3 downto 0);
+	min_out (3 downto 0) <= minRegister (3 downto 0);
 end arch;
 	
