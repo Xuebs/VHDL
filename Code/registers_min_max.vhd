@@ -68,6 +68,53 @@ begin
 				reg_out(3 downto 0) <= register4 (3 downto 0);
 		end case;
 	end process selReg;
+
+
+	maxOut: process(clk) is
 	
+	variable tempMax : std_logic_vector(3 downto 0);
+
+	begin
+		tempMax(3 downto 0) := register1(3 downto 0);
+			
+		if (register1 < register2) then
+			tempMax(3 downto 0) := register2 (3 downto 0);
+		end if;
+
+		if (register2 < register3) then
+			tempMax(3 downto 0) := register3(3 downto 0);
+		end if;
+
+		if (register3 < register4) then
+			tempMax(3 downto 0) := register4(3 downto 0);
+		end if;
+		
+		max_out(3 downto 0) <= tempMax(3 downto 0);	
+
+	end process maxOut;
+
+
+	minOut: process(clk) is
+	
+	variable tempMin : std_logic_vector(3 downto 0);
+
+	begin
+		tempMin(3 downto 0) := register1(3 downto 0);
+			
+		if (register1 > register2) then
+			tempMin(3 downto 0) := register2 (3 downto 0);
+		end if;
+
+		if (register2 > register3) then
+			tempMin(3 downto 0) := register3(3 downto 0);
+		end if;
+
+		if (register3 > register4) then
+			tempMin(3 downto 0) := register4(3 downto 0);
+		end if;
+
+		min_out(3 downto 0) <= tempMin(3 downto 0);	
+	
+	end process minOut;	
 end arch;
 	
