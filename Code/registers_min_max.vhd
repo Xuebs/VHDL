@@ -73,9 +73,11 @@ begin
 	maxOut: process(clk) is
 	
 	variable tempMax : std_logic_vector(3 downto 0);
+	variable maxComp: std_logic_vector(3 downto 0);
 
 	begin
 		tempMax(3 downto 0) := register1(3 downto 0);
+		maxComp(3 downto 0) := max_out(3 downto 0)
 			
 		if (register1 < register2) then
 			tempMax(3 downto 0) := register2 (3 downto 0);
@@ -89,7 +91,7 @@ begin
 			tempMax(3 downto 0) := register4(3 downto 0);
 		end if;
 		
-		if (max_out < tempMax) then
+		if (maxComp < tempMax) then
 			max_out(3 downto 0) <= tempMax(3 downto 0);
 		end if;
 
@@ -99,10 +101,12 @@ begin
 	minOut: process(clk) is
 	
 	variable tempMin : std_logic_vector(3 downto 0);
+	variable minComp : std_logic_vector(3 downto 0);
 
 	begin
 		tempMin(3 downto 0) := register1(3 downto 0);
-			
+		minComp(3 downto 0) := min_out(3 downto 0)
+
 		if (register1 > register2) then
 			tempMin(3 downto 0) := register2 (3 downto 0);
 		end if;
@@ -115,7 +119,7 @@ begin
 			tempMin(3 downto 0) := register4(3 downto 0);
 		end if;
 		
-		if(min_out > tempMin) then
+		if(minComp > tempMin) then
 			min_out(3 downto 0) <= tempMin(3 downto 0);	
 		end if;
 	end process minOut;	
