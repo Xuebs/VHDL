@@ -69,11 +69,11 @@ begin
 	selReg: process (sel) is
 	begin
 		case sel is
-			when '00' =>
+			when "00" =>
 				reg_out(3 downto 0) <= register1 (3 downto 0);
-			when '01' =>
+			when "01" =>
 				reg_out(3 downto 0) <= register2 (3 downto 0);
-			when '10' =>
+			when "10" =>
 				reg_out(3 downto 0) <= register3 (3 downto 0);
 			when others =>
 				reg_out(3 downto 0) <= register4 (3 downto 0);
