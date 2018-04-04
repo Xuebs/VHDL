@@ -27,13 +27,13 @@ begin
 
 	begin
 		
-		if (clk'event and clk='0') then
+		if (clk'event and clk='1') then
 			register4 (3 downto 0) <= register3 (3 downto 0);
 			register3 (3 downto 0) <= register2 (3 downto 0);
 			register2 (3 downto 0) <= register1 (3 downto 0);
 			register1 (3 downto 0) <= din (3 downto 0);
 		end if;
-		
+
 	end process updateReg;
 
 	resetReg: process (reset) is
@@ -47,6 +47,19 @@ begin
 		end if;
 	end process resetReg;
 
+	selReg: process (sel) is
+	begin
+		case sel is
+			when sel = "00" =>
+				reg_out(3 downto 0) <= register1 (3 downto 0);
+			when sel = "01" =>
+				reg_out(3 downto 0) <= register2 (3 downto 0);
+			when sel = "10" =>
+				reg_out(3 downto 0) <= register3 (3 downto 0);
+			when sel = "11" =>
+				reg_out(3 downto 0) <= register4 (3 downto 0);
+		end case;
+	end selReg;
 	
 end arch;
 	
