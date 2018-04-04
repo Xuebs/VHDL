@@ -55,8 +55,8 @@ begin
 
 	end process updateReg;
 
-	--selReg: process (sel) is
-	--begin
+	selReg: process (clk, sel) is
+	begin
 		case sel is
 			when "00" =>
 				reg_out(3 downto 0) <= register1 (3 downto 0);
@@ -67,7 +67,7 @@ begin
 			when others =>
 				reg_out(3 downto 0) <= register4 (3 downto 0);
 		end case;
-	--end process selReg;
+	end process selReg;
 	
 end arch;
 	
