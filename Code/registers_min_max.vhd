@@ -28,10 +28,13 @@ begin
 	begin
 		
 		if (clk'event and clk='1') then
-			register4 (3 downto 0) <= register3 (3 downto 0);
-			register3 (3 downto 0) <= register2 (3 downto 0);
-			register2 (3 downto 0) <= register1 (3 downto 0);
 			register1 (3 downto 0) <= din (3 downto 0);
+			register2 (3 downto 0) <= register1 (3 downto 0);
+			register3 (3 downto 0) <= register2 (3 downto 0);
+			register4 (3 downto 0) <= register3 (3 downto 0);
+			--register3 (3 downto 0) <= register2 (3 downto 0);
+			--register2 (3 downto 0) <= register1 (3 downto 0);
+			--register1 (3 downto 0) <= din (3 downto 0);
 		end if;
 
 	end process updateReg;
