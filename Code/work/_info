@@ -1,9 +1,9 @@
 m255
 K3
 T_opt2
-V?@5:P^Lm]C0Nb]ANU6_;^1
+VM2BK89HSb[]nIOT[1jU021
 04 17 4 work registers_min_max arch 1
-Z0 =1-989096c54223-5ac51b1e-4c6b0-615a
+Z0 =1-989096c4f3a1-5ac54433-58afb-35e1
 Z1 o-quiet -auto_acc_if_foreign -work work
 Z2 n@_opt2
 Z3 OL;O;6.6g;45
@@ -106,13 +106,13 @@ R19
 R13
 Z44 !s100 1JeV?f`OWXa1@IHk>Bc>63
 Eregisters_min_max
-Z45 w1522866935
+Z45 w1522877449
 R5
 R6
 R7
 R37
-Z46 8registers_min_max.vhd
-Z47 Fregisters_min_max.vhd
+Z46 8registers_min_max_sig.vhd
+Z47 Fregisters_min_max_sig.vhd
 l0
 L5
 Z48 V]e0:ZR6[W;BgIe5FAVbPz0
@@ -125,16 +125,16 @@ R5
 R6
 R7
 Z50 DEx4 work 17 registers_min_max 0 22 ]e0:ZR6[W;BgIe5FAVbPz0
-l22
+l24
 L15
-Z51 VAV^TQ14dhd]EVG>EONh0o2
+Z51 VB;=e:kXDH?WJ:<bVk5Y4o2
 R12
 32
 R17
 R18
 R19
 R13
-Z52 !s100 Y1M8^id@aE2SHeYdSb?iZ0
+Z52 !s100 e>a7@d=[NKf^:O<kB14o?0
 Esum_of_minterms
 Z53 w1519867924
 R7

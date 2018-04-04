@@ -1,0 +1,108 @@
+//  Precision RTL Synthesis  64-bit 2016.1.0.15 (Production Release) Wed Jun  8 09:35:56 PDT 2016
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2016, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux x_ti@flying-dragon.encs.concordia.ca #1 SMP Wed Mar 7 13:12:24 CST 2018 3.10.0-693.21.1.el7.x86_64 x86_64
+//  
+//  Start time Wed Apr  4 17:12:57 2018
+
+***************************************************************
+Device Utilization for 2VP30ff896
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               20      556       3.60%
+Global Buffers                    1       16        6.25%
+LUTs                              56      27392     0.20%
+CLB Slices                        28      13696     0.20%
+Dffs or Latches                   24      29060     0.08%
+Block RAMs                        0       136       0.00%
+Block Multipliers                 0       136       0.00%
+Block Multiplier Dffs             0       4896      0.00%
+GT_CUSTOM                         0       8         0.00%
+---------------------------------------------------------------
+
+******************************************************
+
+Library: work    Cell: registers_min_max    View: arch
+
+******************************************************
+
+  Cell    Library  References     Total Area
+
+ BUFGP    xcv2p     1 x
+ FDC      xcv2p    12 x      1     12 Dffs or Latches
+ FDP      xcv2p     4 x      1      4 Dffs or Latches
+ IBUF     xcv2p     7 x
+ LD       xcv2p     8 x      1      8 Dffs or Latches
+ LUT3     xcv2p    30 x      1     30 LUTs
+ LUT4     xcv2p    26 x      1     26 LUTs
+ MUXF5    xcv2p     4 x      1      4 MUXF5
+ OBUF     xcv2p    12 x
+
+ Number of ports :                           20
+ Number of nets :                           112
+ Number of instances :                      104
+ Number of references to this view :          0
+
+Total accumulated area : 
+ Number of Dffs or Latches :                 24
+ Number of LUTs :                            56
+ Number of MUXF5 :                            4
+ Number of gates :                           56
+ Number of accumulated instances :          104
+
+
+*****************************
+ IO Register Mapping Report
+*****************************
+Design: work.registers_min_max.arch
+
++---------------+-----------+----------+----------+----------+
+| Port          | Direction |   INFF   |  OUTFF   |  TRIFF   |
++---------------+-----------+----------+----------+----------+
+| din(3)        | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| din(2)        | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| din(1)        | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| din(0)        | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| sel(1)        | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| sel(0)        | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| reset         | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| clk           | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| max_out(3)    | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| max_out(2)    | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| max_out(1)    | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| max_out(0)    | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| min_out(3)    | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| min_out(2)    | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| min_out(1)    | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| min_out(0)    | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| reg_out(3)    | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| reg_out(2)    | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| reg_out(1)    | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| reg_out(0)    | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+Total registers mapped: 0

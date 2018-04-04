@@ -1,0 +1,31 @@
+# Info: [9566]: Logging project transcript to file /nfs/home/x/x_ti/Modelsim/VHDL/registers_min_max_impl_1/precision.log
+# Info: [9566]: Logging suppressed messages transcript to file /nfs/home/x/x_ti/Modelsim/VHDL/registers_min_max_impl_1/precision.log.suppressed
+# Info: [9550]: Activated implementation registers_min_max_impl_1 in project /nfs/home/x/x_ti/Modelsim/VHDL/registers_min_max.psp.
+new_project -name registers_min_max -folder /nfs/home/x/x_ti/Modelsim/VHDL -createimpl_name registers_min_max_impl_1
+# COMMAND: add_input_file {Code/registers_min_max.vhd}
+add_input_file {Code/registers_min_max.vhd}
+# COMMAND: setup_design -manufacturer Xilinx -family "VIRTEX-II Pro" -part 2VP30ff896 -speed -7
+# Info: [15298]: Setting up the design to use synthesis library "xcv2p.syn"
+# Info: [575]: The global max fanout is currently set to 10000 for Xilinx - VIRTEX-II Pro.
+# Info: [15324]: Setting Part to: "2VP30ff896".
+# Info: [15325]: Setting Process to: "7".
+# Info: [7512]: The place and route tool for current technology is ISE.
+setup_design -manufacturer Xilinx -family "VIRTEX-II Pro" -part 2VP30ff896 -speed -7
+# COMMAND: setup_design -max_fanout=10000
+# Info: [575]: The global max fanout is currently set to 10000 for Xilinx - VIRTEX-II Pro.
+setup_design -max_fanout=10000
+# COMMAND: compile
+# Info: [3022]: Reading file: /CMC/tools/mentor/precision/Mgc_home/pkgs/psr/techlibs/xcv2p.syn.
+# Info: [634]: Loading library initialization file /CMC/tools/mentor/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2016a.7
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2016a.7
+# Info: [42502]: Analyzing input file "/nfs/home/x/x_ti/Modelsim/VHDL/Code/registers_min_max.vhd" ...
+# Error: [42572]: "/nfs/home/x/x_ti/Modelsim/VHDL/Code/registers_min_max.vhd", line 92: Cannot read output/linkage port max_out
+# Error: [42572]: "/nfs/home/x/x_ti/Modelsim/VHDL/Code/registers_min_max.vhd", line 92: Cannot read output/linkage port max_out
+# Error: [42549]: "/nfs/home/x/x_ti/Modelsim/VHDL/Code/registers_min_max.vhd", line 92: Either Type mismatch or no visible function for this case
+# Error: [40008]: HDL analysis failed.
+compile
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation registers_min_max_impl_1.

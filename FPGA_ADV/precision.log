@@ -1,4 +1,4 @@
-# Info: [9566]: Logging session transcript to file /nfs/home/x/x_ti/Modelsim/Xilinx/converter2/precision.log
+# Info: [9566]: Logging session transcript to file /nfs/home/x/x_ti/Modelsim/VHDL/Code/precision.log
 //  Precision RTL Synthesis  64-bit 2016.1.0.15 (Production Release) Wed Jun  8 09:35:56 PDT 2016
 //  
 //  Copyright (c) Mentor Graphics Corporation, 1996-2016, All Rights Reserved.
@@ -7,24 +7,24 @@
 //            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
 //          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 //  
-//  Running on Linux x_ti@anole.encs.concordia.ca #1 SMP Thu Jan 25 04:11:40 CST 2018 3.10.0-693.17.1.el7.x86_64 x86_64
+//  Running on Linux x_ti@flying-dragon.encs.concordia.ca #1 SMP Wed Mar 7 13:12:24 CST 2018 3.10.0-693.21.1.el7.x86_64 x86_64
 //  
-//  Start time Wed Mar 14 16:19:04 2018
+//  Start time Wed Apr  4 17:32:19 2018
 # -------------------------------------------------
-# Info: [9566]: Logging session transcript to file /nfs/home/x/x_ti/Modelsim/Xilinx/converter2/precision.log
-# COMMAND: new_project -name lab3_3 -folder /nfs/home/x/x_ti/Modelsim/FPGA_ADV -createimpl_name lab3_3_impl_1
-# Info: [9574]: Input directory: /nfs/home/x/x_ti/Modelsim/FPGA_ADV
-# Info: [9569]: Moving session transcript to file /nfs/home/x/x_ti/Modelsim/FPGA_ADV/precision.log
-# Info: [9555]: Created project /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3.psp in folder /nfs/home/x/x_ti/Modelsim/FPGA_ADV.
-# Info: [9531]: Created directory: /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3_impl_1.
-# Info: [9554]: Created implementation lab3_3_impl_1 in project /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3.psp.
-# Info: [9575]: The Results Directory has been set to: /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3_impl_1/
-# Info: [9566]: Logging project transcript to file /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3_impl_1/precision.log
-# Info: [9566]: Logging suppressed messages transcript to file /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3_impl_1/precision.log.suppressed
-# Info: [9550]: Activated implementation lab3_3_impl_1 in project /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3.psp.
-new_project -name lab3_3 -folder /nfs/home/x/x_ti/Modelsim/FPGA_ADV -createimpl_name lab3_3_impl_1
-# COMMAND: add_input_file {../Code/converter.vhd}
-add_input_file {../Code/converter.vhd}
+# Info: [9566]: Logging session transcript to file /nfs/home/x/x_ti/Modelsim/VHDL/Code/precision.log
+# COMMAND: new_project -name registers_min_max_sig -folder /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV -createimpl_name registers_min_max_sig_impl_1
+# Info: [9574]: Input directory: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV
+# Info: [9569]: Moving session transcript to file /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/precision.log
+# Info: [9555]: Created project /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig.psp in folder /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV.
+# Info: [9531]: Created directory: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig_impl_1.
+# Info: [9554]: Created implementation registers_min_max_sig_impl_1 in project /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig.psp.
+# Info: [9575]: The Results Directory has been set to: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig_impl_1/
+# Info: [9566]: Logging project transcript to file /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig_impl_1/precision.log
+# Info: [9566]: Logging suppressed messages transcript to file /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig_impl_1/precision.log.suppressed
+# Info: [9550]: Activated implementation registers_min_max_sig_impl_1 in project /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig.psp.
+new_project -name registers_min_max_sig -folder /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV -createimpl_name registers_min_max_sig_impl_1
+# COMMAND: add_input_file {../Code/registers_min_max_sig.vhd}
+add_input_file {../Code/registers_min_max_sig.vhd}
 # COMMAND: setup_design -manufacturer Xilinx -family "VIRTEX-II Pro" -part 2VP30ff896 -speed -7
 # Info: [15298]: Setting up the design to use synthesis library "xcv2p.syn"
 # Info: [575]: The global max fanout is currently set to 10000 for Xilinx - VIRTEX-II Pro.
@@ -42,10 +42,9 @@ setup_design -max_fanout=10000
 # Info: [40000]: vhdlorder, Release 2016a.7
 # Info: [40000]: Files sorted successfully.
 # Info: [40000]: hdl-analyze, Release RTLC-Precision 2016a.7
-# Info: [42502]: Analyzing input file "/CMC/tools/xilinx_10.1/ISE/vhdl/src/unisims/unisim_VCOMP.vhd" ...
-# Info: [42502]: Analyzing input file "/nfs/home/x/x_ti/Modelsim/FPGA_ADV/../Code/converter.vhd" ...
-# Info: [659]: Top module of the design is set to: converter.
-# Info: [657]: Current working directory: /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3_impl_1.
+# Info: [42502]: Analyzing input file "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd" ...
+# Info: [659]: Top module of the design is set to: registers_min_max.
+# Info: [657]: Current working directory: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig_impl_1.
 # Info: [40000]: RTLC-Driver, Release RTLC-Precision 2016a.7
 # Info: [40000]: Last compiled on Jun  2 2016 06:11:46
 # Info: [44512]: Initializing...
@@ -53,31 +52,45 @@ setup_design -max_fanout=10000
 # Info: [40000]: RTLCompiler, Release RTLC-Precision 2016a.7
 # Info: [40000]: Last compiled on Jun  2 2016 06:47:43
 # Info: [44512]: Initializing...
-# Info: [44522]: Root Module work.converter(arch): Pre-processing...
-# Info: [44523]: Root Module work.converter(arch): Compiling...
+# Info: [44522]: Root Module work.registers_min_max(arch): Pre-processing...
+# Warning: [45729]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 27: variable reg1 has never been used.
+# Warning: [45729]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 28: variable reg2 has never been used.
+# Warning: [45729]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 29: variable reg3 has never been used.
+# Warning: [45729]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 30: variable reg4 has never been used.
+# Info: [44523]: Root Module work.registers_min_max(arch): Compiling...
+# Warning: [45784]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 66: Module work.registers_min_max(arch), Net(s) register1[3:0], register2[3:0], register3[3:0], register4[3:0]: Although this signal is not part of the sensitivity list of this block, it is being read. This may lead to simulation mismatch.
+# Warning: [45784]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 81: Module work.registers_min_max(arch), Net(s) register1[3:0], register2[3:0], register3[3:0], register4[3:0]: Although this signal is not part of the sensitivity list of this block, it is being read. This may lead to simulation mismatch.
+# Warning: [45784]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 109: Module work.registers_min_max(arch), Net(s) register2[3:0], register1[3:0], register3[3:0], register4[3:0]: Although this signal is not part of the sensitivity list of this block, it is being read. This may lead to simulation mismatch.
+# Warning: [45702]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 17: Initial value for register1[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 18: Initial value for register2[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 19: Initial value for register3[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 20: Initial value for register4[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 21: Initial value for maxRegister[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 22: Initial value for minRegister[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Info: [45205]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 81: Module work.registers_min_max(arch), Net(s) maxRegister[3:0]: Latch inferred.
+# Info: [45205]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max_sig.vhd", line 109: Module work.registers_min_max(arch), Net(s) minRegister[3:0]: Latch inferred.
 # Info: [44842]: Compilation successfully completed.
-# Info: [44841]: Counter Inferencing === Detected : 1, Inferred (Modgen/Selcounter/AddSub) : 0 (0 / 0 / 0), AcrossDH (Merged/Not-Merged) : (0 / 0), Not-Inferred (Acrossdh/Attempted) : (0 / 0), Local Vars : 1 ===
-# Info: [44856]: Total lines of RTL compiled: 41.
+# Info: [44856]: Total lines of RTL compiled: 130.
 # Info: [44835]: Total CPU time for compilation: 0.0 secs.
-# Info: [44513]: Overall running time for compilation: 4.0 secs.
-# Info: [657]: Current working directory: /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3_impl_1.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [657]: Current working directory: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig_impl_1.
 # Info: [15330]: Doing rtl optimizations.
 # Info: [660]: Finished compiling design.
 compile
 # COMMAND: synthesize
-# Info: [657]: Current working directory: /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3_impl_1.
-# Info: [15002]: Optimizing design view:.work.converter.arch
-# Info: [3027]: Writing file: /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3_impl_1/converter.edf.
-# Info: [3027]: Writing file: /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3_impl_1/converter.ucf.
+# Info: [657]: Current working directory: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig_impl_1.
+# Info: [15002]: Optimizing design view:.work.registers_min_max.arch
+# Info: [8048]: Added global buffer BUFGP for Port port:clk
+# Info: [3027]: Writing file: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig_impl_1/registers_min_max.edf.
+# Info: [3027]: Writing file: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig_impl_1/registers_min_max.ucf.
 # Info: [660]: Finished synthesizing design.
-# Info: [11019]: Total CPU time for synthesis: 0.0 s secs.
-# Info: [11020]: Overall running time for synthesis: 0.1 s secs.
+# Info: [11019]: Total CPU time for synthesis: 0.6 s secs.
+# Info: [11020]: Overall running time for synthesis: 1.1 s secs.
 synthesize
 # COMMAND: save_project
-# Info: [9562]: Saved implementation lab3_3_impl_1 in project /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3.psp.
+# Info: [9562]: Saved implementation registers_min_max_sig_impl_1 in project /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig.psp.
 save_project
-# COMMAND: close_project -discard
-# Info: [9530]: Closed project: /nfs/home/x/x_ti/Modelsim/FPGA_ADV/lab3_3.psp.
+# COMMAND: exit -force
+# Info: [9530]: Closed project: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_sig.psp.
 close_project -discard
-# COMMAND: exit
-exit
+exit -force

@@ -1,0 +1,90 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+/nfs/sw_cmc/x86_64.EL7/tools/xilinx_10.1/ISE/bin/lin64/unwrapped/trce -ise
+/nfs/home/x/x_ti/Modelsim/VHDL/Xilinx/registers_min_max_sig/registers_min_max_sig.ise
+-intstyle ise -e 3 -s 7 -xml registers_min_max registers_min_max.ncd -o
+registers_min_max.twr registers_min_max.pcf -ucf registers_min_max.ucf
+
+Design file:              registers_min_max.ncd
+Physical constraint file: registers_min_max.pcf
+Device,package,speed:     xc2vp30,ff896,-7 (PRODUCTION 1.94 2008-01-09)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+din(0)      |   -2.258(R)|    4.013(R)|clk_int           |   0.000|
+din(1)      |   -2.589(R)|    4.271(R)|clk_int           |   0.000|
+din(2)      |   -2.775(R)|    4.422(R)|clk_int           |   0.000|
+din(3)      |   -2.670(R)|    4.339(R)|clk_int           |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+reg_out(0)  |   10.992(R)|clk_int           |   0.000|
+reg_out(1)  |   10.856(R)|clk_int           |   0.000|
+reg_out(2)  |   10.536(R)|clk_int           |   0.000|
+reg_out(3)  |   10.905(R)|clk_int           |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.107|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+sel(0)         |reg_out(0)     |    5.655|
+sel(0)         |reg_out(1)     |    6.076|
+sel(0)         |reg_out(2)     |    5.995|
+sel(0)         |reg_out(3)     |    5.797|
+sel(1)         |reg_out(0)     |    6.373|
+sel(1)         |reg_out(1)     |    6.335|
+sel(1)         |reg_out(2)     |    5.870|
+sel(1)         |reg_out(3)     |    6.187|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Apr  4 17:38:59 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 299 MB
+
+
+

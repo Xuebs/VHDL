@@ -1,0 +1,5 @@
+ngdbuild -ise "/nfs/home/x/x_ti/Modelsim/VHDL/Xilinx/registers_min_max_sig/registers_min_max_sig.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "registers_min_max.edf" registers_min_max.ngd
+map -ise "/nfs/home/x/x_ti/Modelsim/VHDL/Xilinx/registers_min_max_sig/registers_min_max_sig.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o registers_min_max_map.ncd registers_min_max.ngd registers_min_max.pcf
+par -ise "/nfs/home/x/x_ti/Modelsim/VHDL/Xilinx/registers_min_max_sig/registers_min_max_sig.ise" -w -intstyle ise -ol std -t 1 registers_min_max_map.ncd registers_min_max.ncd registers_min_max.pcf
+trce -ise "/nfs/home/x/x_ti/Modelsim/VHDL/Xilinx/registers_min_max_sig/registers_min_max_sig.ise" -intstyle ise -e 3 -s 7 -xml registers_min_max registers_min_max.ncd -o registers_min_max.twr registers_min_max.pcf -ucf registers_min_max.ucf
+bitgen -ise "/nfs/home/x/x_ti/Modelsim/VHDL/Xilinx/registers_min_max_sig/registers_min_max_sig.ise" -intstyle ise -f registers_min_max.ut registers_min_max.ncd

@@ -23,38 +23,43 @@ signal minRegister : std_logic_vector(3 downto 0) := "1000";
 
 begin
 
-	updateReg: process (clk) is
+	updateReg: process (clk, reset) is
 		variable reg1 : std_logic_vector(3 downto 0);
 		variable reg2 : std_logic_vector(3 downto 0);
 		variable reg3 : std_logic_vector(3 downto 0);
 		variable reg4 : std_logic_vector(3 downto 0);
-
 	begin
 		
-		if (rising_edge(clk)) then
+		--if (rising_edge(clk)) then
 			if (reset = '1') then
+			
 				register1 (3 downto 0)<= "1000";
 				register2 (3 downto 0)<= "1000";
 				register3 (3 downto 0)<= "1000";
 				register4 (3 downto 0)<= "1000";
 
 			elsif (clk'event and clk = '1') then
-				reg1 (3 downto 0) := register1 (3 downto 0);
-				reg2 (3 downto 0) := register2 (3 downto 0);
-				reg3 (3 downto 0) := register3 (3 downto 0);
-				reg4 (3 downto 0) := register4 (3 downto 0);
+				--reg1 (3 downto 0) := register1 (3 downto 0);
+				--reg2 (3 downto 0) := register2 (3 downto 0);
+				--reg3 (3 downto 0) := register3 (3 downto 0);
+				--reg4 (3 downto 0) := register4 (3 downto 0);
 
-				reg4 (3 downto 0) := reg3(3 downto 0);
-				reg3 (3 downto 0) := reg2(3 downto 0);
-				reg2 (3 downto 0) := reg1(3 downto 0);
-				reg1 (3 downto 0) := din (3 downto 0);
+				--reg4 (3 downto 0) := reg3(3 downto 0);
+				--reg3 (3 downto 0) := reg2(3 downto 0);
+				--reg2 (3 downto 0) := reg1(3 downto 0);
+				--reg1 (3 downto 0) := din (3 downto 0);
 
-				register4 (3 downto 0) <= reg4 (3 downto 0);
-				register3 (3 downto 0) <= reg3 (3 downto 0);
-				register2 (3 downto 0) <= reg2 (3 downto 0);
-				register1 (3 downto 0) <= reg1 (3 downto 0);
+				--register4 (3 downto 0) <= reg4 (3 downto 0);
+				--register3 (3 downto 0) <= reg3 (3 downto 0);
+				--register2 (3 downto 0) <= reg2 (3 downto 0);
+				--register1 (3 downto 0) <= reg1 (3 downto 0);
+
+				register4 (3 downto 0) <= register3(3 downto 0);
+				register3 (3 downto 0) <= register2(3 downto 0);
+				register2 (3 downto 0) <= register1(3 downto 0);
+				register1 (3 downto 0) <= din(3 downto 0);
 			end if;
-		end if;
+		--end if;
 
 	end process updateReg;
 

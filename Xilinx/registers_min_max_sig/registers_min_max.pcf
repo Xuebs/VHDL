@@ -1,0 +1,28 @@
+//! **************************************************************************
+// Written by: Map K.31 on Wed Apr 04 17:38:39 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "din(2)" LOCATE = SITE "L4" LEVEL 1;
+COMP "din(3)" LOCATE = SITE "N5" LEVEL 1;
+COMP "clk" LOCATE = SITE "T4" LEVEL 1;
+COMP "min_out(0)" LOCATE = SITE "T6" LEVEL 1;
+COMP "min_out(1)" LOCATE = SITE "V1" LEVEL 1;
+COMP "min_out(2)" LOCATE = SITE "R3" LEVEL 1;
+COMP "min_out(3)" LOCATE = SITE "R5" LEVEL 1;
+COMP "reg_out(0)" LOCATE = SITE "AC4" LEVEL 1;
+COMP "reg_out(1)" LOCATE = SITE "AC3" LEVEL 1;
+COMP "reg_out(2)" LOCATE = SITE "AA6" LEVEL 1;
+COMP "max_out(0)" LOCATE = SITE "T2" LEVEL 1;
+COMP "reg_out(3)" LOCATE = SITE "AA5" LEVEL 1;
+COMP "max_out(1)" LOCATE = SITE "P4" LEVEL 1;
+COMP "max_out(2)" LOCATE = SITE "R7" LEVEL 1;
+COMP "max_out(3)" LOCATE = SITE "P2" LEVEL 1;
+COMP "reset" LOCATE = SITE "N3" LEVEL 1;
+COMP "sel(0)" LOCATE = SITE "P7" LEVEL 1;
+COMP "sel(1)" LOCATE = SITE "P1" LEVEL 1;
+COMP "din(0)" LOCATE = SITE "R9" LEVEL 1;
+COMP "din(1)" LOCATE = SITE "N2" LEVEL 1;
+NET "clk_ibuf/IBUFG" BEL "clk_ibuf/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

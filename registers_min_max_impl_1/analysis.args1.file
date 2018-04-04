@@ -1,0 +1,10 @@
+8:-out_dir
+65:/nfs/home/x/x_ti/Modelsim/VHDL/registers_min_max_impl_1//rtlc.out
+10:-pipe_flow
+4:-vhf
+76:/nfs/home/x/x_ti/Modelsim/VHDL/registers_min_max_impl_1//hdlAnalyze_vhdlfile
+25:-comment_transoff_regions
+13:-lib_map_file
+65:/nfs/home/x/x_ti/Modelsim/VHDL/registers_min_max_impl_1//.jaguarc
+74:+incdir+/nfs/home/x/x_ti/Modelsim/VHDL/Code+/nfs/home/x/x_ti/Modelsim/VHDL
+17:+define+synthesis

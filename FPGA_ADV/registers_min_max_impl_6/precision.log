@@ -1,0 +1,75 @@
+# Info: [9566]: Logging project transcript to file /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_impl_6/precision.log
+# Info: [9566]: Logging suppressed messages transcript to file /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_impl_6/precision.log.suppressed
+# Info: [9550]: Activated implementation registers_min_max_impl_6 in project /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max.psp.
+new_project -name registers_min_max -folder /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV -createimpl_name registers_min_max_impl_6 -force
+# COMMAND: add_input_file {../Code/registers_min_max.vhd}
+add_input_file {../Code/registers_min_max.vhd}
+# COMMAND: setup_design -manufacturer Xilinx -family "VIRTEX-II Pro" -part 2VP30ff896 -speed -7
+# Info: [15298]: Setting up the design to use synthesis library "xcv2p.syn"
+# Info: [575]: The global max fanout is currently set to 10000 for Xilinx - VIRTEX-II Pro.
+# Info: [15324]: Setting Part to: "2VP30ff896".
+# Info: [15325]: Setting Process to: "7".
+# Info: [7512]: The place and route tool for current technology is ISE.
+setup_design -manufacturer Xilinx -family "VIRTEX-II Pro" -part 2VP30ff896 -speed -7
+# COMMAND: setup_design -max_fanout=10000
+# Info: [575]: The global max fanout is currently set to 10000 for Xilinx - VIRTEX-II Pro.
+setup_design -max_fanout=10000
+# COMMAND: compile
+# Info: [3022]: Reading file: /CMC/tools/mentor/precision/Mgc_home/pkgs/psr/techlibs/xcv2p.syn.
+# Info: [634]: Loading library initialization file /CMC/tools/mentor/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2016a.7
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2016a.7
+# Info: [42502]: Analyzing input file "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd" ...
+# Info: [659]: Top module of the design is set to: registers_min_max.
+# Info: [657]: Current working directory: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_impl_6.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2016a.7
+# Info: [40000]: Last compiled on Jun  2 2016 06:11:46
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2016a.7
+# Info: [40000]: Last compiled on Jun  2 2016 06:47:43
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.registers_min_max(arch): Pre-processing...
+# Warning: [45729]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 27: variable reg1 has never been used.
+# Warning: [45729]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 28: variable reg2 has never been used.
+# Warning: [45729]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 29: variable reg3 has never been used.
+# Warning: [45729]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 30: variable reg4 has never been used.
+# Info: [44523]: Root Module work.registers_min_max(arch): Compiling...
+# Warning: [45784]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 66: Module work.registers_min_max(arch), Net(s) register1[3:0], register2[3:0], register3[3:0], register4[3:0]: Although this signal is not part of the sensitivity list of this block, it is being read. This may lead to simulation mismatch.
+# Warning: [45784]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 81: Module work.registers_min_max(arch), Net(s) register1[3:0], register2[3:0], register3[3:0], register4[3:0]: Although this signal is not part of the sensitivity list of this block, it is being read. This may lead to simulation mismatch.
+# Warning: [45784]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 109: Module work.registers_min_max(arch), Net(s) register2[3:0], register1[3:0], register3[3:0], register4[3:0]: Although this signal is not part of the sensitivity list of this block, it is being read. This may lead to simulation mismatch.
+# Warning: [45702]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 17: Initial value for register1[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 18: Initial value for register2[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 19: Initial value for register3[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 20: Initial value for register4[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 21: Initial value for maxRegister[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 22: Initial value for minRegister[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Info: [45205]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 135: Module work.registers_min_max(arch), Net(s) max_out[3:0]: Latch inferred.
+# Info: [45205]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 136: Module work.registers_min_max(arch), Net(s) min_out[3:0]: Latch inferred.
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 130.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 0.0 secs.
+# Info: [657]: Current working directory: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_impl_6.
+# Info: [15330]: Doing rtl optimizations.
+# Info: [9032]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 76: : Inferred shift register Instance 'instance:registers_min_max_sr_0' of type 'cell:shiftregister_reg_out_mux_0Bus3(3)_clk_reset_set_0_0_1_1_2_4_0'
+# Info: [9032]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 76: : Inferred shift register Instance 'instance:registers_min_max_sr_1' of type 'cell:shiftregister_reg_out_mux_0Bus3(2)_clk_reset_set_0_1_0_1_2_4_0'
+# Info: [9032]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 76: : Inferred shift register Instance 'instance:registers_min_max_sr_2' of type 'cell:shiftregister_reg_out_mux_0Bus3(1)_clk_reset_set_0_1_0_1_2_4_0'
+# Info: [9032]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/registers_min_max.vhd", line 76: : Inferred shift register Instance 'instance:registers_min_max_sr_3' of type 'cell:shiftregister_reg_out_mux_0Bus3(0)_clk_reset_set_0_1_0_1_2_4_0'
+# Info: [660]: Finished compiling design.
+compile
+# COMMAND: synthesize
+# Info: [657]: Current working directory: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_impl_6.
+# Info: [20013]: Precision will use 4 processor(s).
+# Info: [15002]: Optimizing design view:.work.registers_min_max.arch
+# Info: [8048]: Added global buffer BUFGP for Port port:clk
+# Info: [3027]: Writing file: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_impl_6/registers_min_max.edf.
+# Info: [3027]: Writing file: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max_impl_6/registers_min_max.ucf.
+# Info: [660]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.5 s secs.
+# Info: [11020]: Overall running time for synthesis: 1.6 s secs.
+synthesize
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation registers_min_max_impl_6.
