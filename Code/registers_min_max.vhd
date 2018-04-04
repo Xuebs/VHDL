@@ -55,19 +55,8 @@ begin
 
 	end process updateReg;
 
-	-- resetReg: process (reset) is
-	
-	-- begin
-	-- 	if (reset'event and reset = '1') then
-	-- 		register1 (3 downto 0)<= "1000";
-	-- 		register2 (3 downto 0)<= "1000";
-	-- 		register3 (3 downto 0)<= "1000";
-	-- 		register4 (3 downto 0)<= "1000";
-	-- 	end if;
-	-- end process resetReg;
-
-	selReg: process (sel) is
-	begin
+	--selReg: process (sel) is
+	--begin
 		case sel is
 			when "00" =>
 				reg_out(3 downto 0) <= register1 (3 downto 0);
@@ -78,7 +67,7 @@ begin
 			when others =>
 				reg_out(3 downto 0) <= register4 (3 downto 0);
 		end case;
-	end process selReg;
+	--end process selReg;
 	
 end arch;
 	
