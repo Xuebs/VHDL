@@ -14,12 +14,12 @@ end registers_min_max;
 
 architecture arch of registers_min_max is
 
-signal register1 : std_logic_vector(3 downto 0);
-signal register2 : std_logic_vector(3 downto 0);
-signal register3 : std_logic_vector(3 downto 0);
-signal register4 : std_logic_vector(3 downto 0);
-signal maxRegister : std_logic_vector(3 downto 0);
-signal minRegister : std_logic_vector(3 downto 0);
+signal register1 : std_logic_vector(3 downto 0) := "1000";
+signal register2 : std_logic_vector(3 downto 0) := "1000";
+signal register3 : std_logic_vector(3 downto 0) := "1000";
+signal register4 : std_logic_vector(3 downto 0) := "1000";
+signal maxRegister : std_logic_vector(3 downto 0) := "1000";
+signal minRegister : std_logic_vector(3 downto 0) := "1000";
 
 begin
 
