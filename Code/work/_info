@@ -1,9 +1,9 @@
 m255
 K3
 T_opt2
-V=SJ:3L8VkcfHj0HiZRCF`3
-04 4 4 work lab4 arch 1
-Z0 =1-308d996205c8-5ac3c4f8-e48d2-2035
+VSc]ZQGQdANd:ko<JOLmaA1
+04 17 4 work registers_min_max arch 1
+Z0 =1-308d996205c8-5ac4476f-27ef8-112d
 Z1 o-quiet -auto_acc_if_foreign -work work
 Z2 n@_opt2
 Z3 OL;O;6.6g;45
@@ -106,128 +106,128 @@ R19
 R13
 Z44 !s100 1JeV?f`OWXa1@IHk>Bc>63
 Eregisters_min_max
-Z45 w1522360334
+Z45 w1522812384
 R5
 R6
 R7
-R8
-R38
-R39
+R37
+Z46 8registers_min_max.vhd
+Z47 Fregisters_min_max.vhd
 l0
 L5
-Z46 V]e0:ZR6[W;BgIe5FAVbPz0
+Z48 V]e0:ZR6[W;BgIe5FAVbPz0
 R12
 32
 R13
-Z47 !s100 edoCMnOHaOdPEdI=Uebo02
+Z49 !s100 edoCMnOHaOdPEdI=Uebo02
 Aarch
 R5
 R6
 R7
-Z48 DEx4 work 17 registers_min_max 0 22 ]e0:ZR6[W;BgIe5FAVbPz0
+Z50 DEx4 work 17 registers_min_max 0 22 ]e0:ZR6[W;BgIe5FAVbPz0
 l17
 L15
-Z49 V?liR5I7jmD2RF@:8zBkR^3
+Z51 V?liR5I7jmD2RF@:8zBkR^3
 R12
 32
 R17
 R18
 R19
 R13
-Z50 !s100 2LE@:lcXfn;8ezHY7FjkH0
+Z52 !s100 2LE@:lcXfn;8ezHY7FjkH0
 Esum_of_minterms
-Z51 w1519867924
+Z53 w1519867924
 R7
 R8
-Z52 8sum_of_minterms_csa.vhd
-Z53 Fsum_of_minterms_csa.vhd
+Z54 8sum_of_minterms_csa.vhd
+Z55 Fsum_of_minterms_csa.vhd
 l0
 L4
-Z54 VM?N78bRg184lhhEclF:gF3
+Z56 VM?N78bRg184lhhEclF:gF3
 R12
 32
 R13
-Z55 !s100 fbeEE]b305nRdK6YVV5cL0
+Z57 !s100 fbeEE]b305nRdK6YVV5cL0
 Aarch
 R7
-Z56 DEx4 work 15 sum_of_minterms 0 22 M?N78bRg184lhhEclF:gF3
+Z58 DEx4 work 15 sum_of_minterms 0 22 M?N78bRg184lhhEclF:gF3
 l15
 L9
-Z57 VLS=X2oMOnjK<?3MQ=Y`oW0
+Z59 VLS=X2oMOnjK<?3MQ=Y`oW0
 R12
 32
 R34
 R13
-Z58 !s100 `1]efSG9XKPM5elVcf[7]0
+Z60 !s100 `1]efSG9XKPM5elVcf[7]0
 Esum_of_minterms_csa
-Z59 w1519869011
+Z61 w1519869011
 R7
 R8
-R52
-R53
+R54
+R55
 l0
 L4
-Z60 VMZdfiQE;UbjC]gOYBgJbh0
+Z62 VMZdfiQE;UbjC]gOYBgJbh0
 R12
 32
 R13
-Z61 !s100 2=kZoo6j[L>E<_BhIlahJ3
+Z63 !s100 2=kZoo6j[L>E<_BhIlahJ3
 Aarch
 R7
-Z62 DEx4 work 19 sum_of_minterms_csa 0 22 MZdfiQE;UbjC]gOYBgJbh0
+Z64 DEx4 work 19 sum_of_minterms_csa 0 22 MZdfiQE;UbjC]gOYBgJbh0
 l15
 L9
-Z63 VXG?Hba?6b7GEnUehzmA]C3
+Z65 VXG?Hba?6b7GEnUehzmA]C3
 R12
 32
 R34
 R13
-Z64 !s100 `CGg@na9<LohP_DKzMbBC0
+Z66 !s100 `CGg@na9<LohP_DKzMbBC0
 Eted_and3
-Z65 w1518040241
+Z67 w1518040241
 R7
 R8
-Z66 8tedand3.vhd
-Z67 Ftedand3.vhd
+Z68 8tedand3.vhd
+Z69 Ftedand3.vhd
 l0
 L4
-Z68 VB`6`LOg2OcnVWfUnPlL^Z3
+Z70 VB`6`LOg2OcnVWfUnPlL^Z3
 R12
 32
 R13
-Z69 !s100 @6Ak?2^kdX=JVBnLO>fQ53
+Z71 !s100 @6Ak?2^kdX=JVBnLO>fQ53
 Ated_arch
 R7
-Z70 DEx4 work 8 ted_and3 0 22 B`6`LOg2OcnVWfUnPlL^Z3
+Z72 DEx4 work 8 ted_and3 0 22 B`6`LOg2OcnVWfUnPlL^Z3
 l9
 L8
-Z71 VMB;adbaNed=FHXZD]Y5D]2
+Z73 VMB;adbaNed=FHXZD]Y5D]2
 R12
 32
 R34
 R13
-Z72 !s100 ^aTWTb_UoQ?e`CHXgHl:41
+Z74 !s100 ^aTWTb_UoQ?e`CHXgHl:41
 Eted_or3
-Z73 w1518039351
+Z75 w1518039351
 R7
 R8
-Z74 8tedor3.vhd
-Z75 Ftedor3.vhd
+Z76 8tedor3.vhd
+Z77 Ftedor3.vhd
 l0
 L4
-Z76 VQ`>go3IAC8LY2Nh?@d5>K1
+Z78 VQ`>go3IAC8LY2Nh?@d5>K1
 R12
 32
 R13
-Z77 !s100 k8@20K3Y^W4>n>2IDGa013
+Z79 !s100 k8@20K3Y^W4>n>2IDGa013
 Ated_arch
 R7
-Z78 DEx4 work 7 ted_or3 0 22 Q`>go3IAC8LY2Nh?@d5>K1
+Z80 DEx4 work 7 ted_or3 0 22 Q`>go3IAC8LY2Nh?@d5>K1
 l9
 L8
-Z79 V;_zQ:cS0a?F:=_7aT87[n0
+Z81 V;_zQ:cS0a?F:=_7aT87[n0
 R12
 32
 R34
 R13
-Z80 !s100 hfJC3?j[ePGPVh7KW5BDW3
+Z82 !s100 hfJC3?j[ePGPVh7KW5BDW3

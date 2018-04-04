@@ -8,42 +8,24 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim lab4 
+# vsim registers_min_max 
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading work.lab4(arch)#1
+# Loading work.registers_min_max(arch)#1
 # 
 #  
 add wave \
-{sim:/lab4/din } \
-{sim:/lab4/max_out } 
+{sim:/registers_min_max/din } \
+{sim:/registers_min_max/max_out } 
 force din 0000
 run 2
 force clk 1
-run 1
+run 2
 add wave \
-{sim:/lab4/clk } 
-run 1
+{sim:/registers_min_max/clk } 
+force din 0001
 force clk 0
-run 1
-force din 10101
-# Value length (5) does not equal array index length (4).
-# 
-# ** Error: (vsim-4011) Invalid force value: 10101.
-# 
-force din 1010
-run 1
-run 1
-force clk
-# ** Error: (vish-4001) Incorrect number of arguments.
-# Usage: force [-freeze | -drive | -deposit] [-cancel <time>] [-repeat <time>] <object_name> {<value> [[@]<time>[<unit>]]}...
-force clk 1
-run 1
-run 1
-force din 1111
-run 1
-force clk 0
-run 1
+run 2
