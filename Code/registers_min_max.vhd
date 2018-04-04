@@ -89,7 +89,9 @@ begin
 			tempMax(3 downto 0) := register4(3 downto 0);
 		end if;
 		
-		max_out(3 downto 0) <= tempMax(3 downto 0);	
+		if (max_out < tempMax) then
+			max_out(3 downto 0) <= tempMax(3 downto 0);
+		end if;
 
 	end process maxOut;
 
@@ -112,9 +114,10 @@ begin
 		if (register3 > register4) then
 			tempMin(3 downto 0) := register4(3 downto 0);
 		end if;
-
-		min_out(3 downto 0) <= tempMin(3 downto 0);	
-	
+		
+		if(min_out > tempMin) then
+			min_out(3 downto 0) <= tempMin(3 downto 0);	
+		end if;
 	end process minOut;	
 end arch;
 	
