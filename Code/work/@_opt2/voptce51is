@@ -1,9 +1,9 @@
 m255
 K3
 T_opt2
-Z0 VSc]ZQGQdANd:ko<JOLmaA1
+Z0 VnB_KW2MHj;l_<ZSeh[=eR3
 Z1 04 17 4 work registers_min_max arch 1
-Z2 =1-308d996205c8-5ac4476f-27ef8-112d
+Z2 =1-308d996205c8-5ac4614a-eb867-2b11
 Z3 o-quiet -auto_acc_if_foreign -work work
 Z4 n@_opt2
 Z5 OL;O;6.6g;45
@@ -106,7 +106,7 @@ R21
 R15
 Z46 !s100 1JeV?f`OWXa1@IHk>Bc>63
 Eregisters_min_max
-Z47 w1522812384
+Z47 w1522819334
 Z48 DPx17 __model_tech/ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
 Z49 DPx17 __model_tech/ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
 Z50 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
@@ -129,12 +129,12 @@ DEx40 /nfs/home/x/x_ti/Modelsim/VHDL/Code/work 17 registers_min_max 0 22 ]e0:ZR6
 Mx3 17 __model_tech/ieee 14 std_logic_1164
 Mx2 17 __model_tech/ieee 18 std_logic_unsigned
 Mx1 17 __model_tech/ieee 15 std_logic_arith
-l17
+l21
 L15
-Z55 V?liR5I7jmD2RF@:8zBkR^3
+Z55 Vk5oDjKR`Ee:J0O:I4bdo41
 R14
 R15
-Z56 !s100 2LE@:lcXfn;8ezHY7FjkH0
+Z56 !s100 [JB:lZOGMXGM3L_Q9UacS3
 Esum_of_minterms
 Z57 w1519867924
 R9

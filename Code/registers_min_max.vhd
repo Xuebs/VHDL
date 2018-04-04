@@ -56,10 +56,10 @@ begin
 				reg_out(3 downto 0) <= register2 (3 downto 0);
 			when "10" =>
 				reg_out(3 downto 0) <= register3 (3 downto 0);
-			when "11" =>
+			when others =>
 				reg_out(3 downto 0) <= register4 (3 downto 0);
 		end case;
-	end selReg;
+	end process selReg;
 	
 end arch;
 	
