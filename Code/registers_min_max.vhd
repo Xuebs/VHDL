@@ -19,27 +19,32 @@ architecture arch of registers_min_max is
 	signal register4 : std_logic_vector(3 downto 0);
 
 begin
-	updateReg: process (clk'event and clk = '1') is
+	updateReg: process (clk) is
 		-- variable reg1 : std_logic_vector(3 downto 0);
 		-- variable reg2 : std_logic_vector(3 downto 0);
 		-- variable reg3 : std_logic_vector(3 downto 0);
 		-- variable reg4 : std_logic_vector(3 downto 0);
 
-		begin
+	begin
+		
+		if (clk'event and clk='0') then
 			register4 (3 downto 0) <= register3 (3 downto 0);
 			register3 (3 downto 0) <= register2 (3 downto 0);
 			register2 (3 downto 0) <= register1 (3 downto 0);
 			register1 (3 downto 0) <= din (3 downto 0);
+		end if;
 		
 	end process updateReg;
 
-	resetReg: process (reset'event and reset = '1') is
+	resetReg: process (reset) is
 	
-		begin
+	begin
+		if (reset'event and reset = '1') then
 			register1 <= '1000';
 			register2 <= '1000';
 			register3 <= '1000';
 			register4 <= '1000';
+		end if;
 	end process resetReg;
 
 	
