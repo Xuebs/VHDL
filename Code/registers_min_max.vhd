@@ -47,9 +47,9 @@ begin
 			register3 (3 downto 0) <= reg3 (3 downto 0);
 			register2 (3 downto 0) <= reg2 (3 downto 0);
 			register1 (3 downto 0) <= reg1 (3 downto 0);
-		end if;
 
-		if (reset'event and reset = '1') then
+		elsif (reset'event and reset = '1') then
+			
 			register1 (3 downto 0)<= "1000";
 			register2 (3 downto 0)<= "1000";
 			register3 (3 downto 0)<= "1000";
