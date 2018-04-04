@@ -13,18 +13,35 @@ entity registers_min_max is
 end registers_min_max;
 
 architecture arch of registers_min_max is
+	signal register1 : std_logic_vector(3 downto 0);
+	signal register2 : std_logic_vector(3 downto 0);
+	signal register3 : std_logic_vector(3 downto 0);
+	signal register4 : std_logic_vector(3 downto 0);
 
 begin
-	updateReg: process (clk) is
-		variable reg1 : std_logic_vector(3 downto 0);
-		variable reg2 : std_logic_vector(3 downto 0);
-		variable reg3 : std_logic_vector(3 downto 0);
-		variable reg4 : std_logic_vector(3 downto 0);
+	updateReg: process (clk'event and clk = '1') is
+		-- variable reg1 : std_logic_vector(3 downto 0);
+		-- variable reg2 : std_logic_vector(3 downto 0);
+		-- variable reg3 : std_logic_vector(3 downto 0);
+		-- variable reg4 : std_logic_vector(3 downto 0);
 
 		begin
-			max_out (3 downto 0) <= din (3 downto 0);
+			register4 (3 downto 0) <= register3 (3 downto 0);
+			register3 (3 downto 0) <= register2 (3 downto 0);
+			register2 (3 downto 0) <= register1 (3 downto 0);
+			register1 (3 downto 0) <= din (3 downto 0);
 		
 	end process updateReg;
 
+	resetReg: process (reset'event and reset = '1') is
+	
+		begin
+			register1 <= '1000';
+			register2 <= '1000';
+			register3 <= '1000';
+			register4 <= '1000';
+	end process resetReg;
+
+	
 end arch;
 	
