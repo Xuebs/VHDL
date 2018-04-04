@@ -40,10 +40,10 @@ begin
 	
 	begin
 		if (reset'event and reset = '1') then
-			register1 <= '1000';
-			register2 <= '1000';
-			register3 <= '1000';
-			register4 <= '1000';
+			register1 (3 downto 0)<= '1000';
+			register2 (3 downto 0)<= '1000';
+			register3 (3 downto 0)<= '1000';
+			register4 (3 downto 0)<= '1000';
 		end if;
 	end process resetReg;
 
