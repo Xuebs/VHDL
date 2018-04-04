@@ -1,0 +1,25 @@
+NET din(3) LOC = N5;
+NET din(2) LOC = L4;
+NET din(1) LOC = N2;
+NET din(0) LOC = R9;
+
+NET clk LOC = T4;
+
+NET reset LOC = N3 ;
+NET sel(1) LOC = P1 ;
+NET sel(0) LOC = P7;
+
+NET max_out(3) LOC = P2;
+NET max_out(2) LOC = R7;
+NET max_out(1) LOC = P4;
+NET max_out(0) LOC = T2;
+
+NET min_out(3) LOC = R5;
+NET min_out(2) LOC = R3;
+NET min_out(1) LOC = V1;
+NET min_out(0) LOC = T6;
+
+NET reg_out(3) LOC = AA5;
+NET reg_out(2) LOC = AA6;
+NET reg_out(1) LOC = AC3;
+NET reg_out(0) LOC = AC4;
