@@ -21,13 +21,6 @@ signal register4 : std_logic_vector(3 downto 0);
 signal maxRegister : std_logic_vector(3 downto 0);
 signal minRegister : std_logic_vector(3 downto 0);
 
-register1 (3 downto 0)<= "1000";
-register2 (3 downto 0)<= "1000";
-register3 (3 downto 0)<= "1000";
-register4 (3 downto 0)<= "1000";
-minRegister(3 downto 0) <= "1000";
-manRegister(3 downto 0) <= "1000";
-
 begin
 
 	updateReg: process (clk, reset) is
