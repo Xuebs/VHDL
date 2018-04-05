@@ -1,9 +1,9 @@
 m255
 K3
 T_opt2
-Z0 VM2BK89HSb[]nIOT[1jU021
+Z0 VFKIS:O>lhkloaJD6HMA[02
 Z1 04 17 4 work registers_min_max arch 1
-Z2 =1-989096c4f3a1-5ac54433-58afb-35e1
+Z2 =1-1866da08790a-5ac664d7-d4a4b-9c3
 Z3 o-quiet -auto_acc_if_foreign -work work
 Z4 n@_opt2
 Z5 OL;O;6.6g;45
@@ -106,14 +106,14 @@ R21
 R15
 Z46 !s100 1JeV?f`OWXa1@IHk>Bc>63
 Eregisters_min_max
-Z47 w1522877449
+Z47 w1522876320
 Z48 DPx17 __model_tech/ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
 Z49 DPx17 __model_tech/ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
 Z50 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
 32
 R39
-Z51 8registers_min_max_sig.vhd
-Z52 Fregisters_min_max_sig.vhd
+Z51 8registers_min_max.vhd
+Z52 Fregisters_min_max.vhd
 l0
 L5
 Z53 V]e0:ZR6[W;BgIe5FAVbPz0
@@ -131,10 +131,10 @@ Mx2 17 __model_tech/ieee 18 std_logic_unsigned
 Mx1 17 __model_tech/ieee 15 std_logic_arith
 l24
 L15
-Z55 VB;=e:kXDH?WJ:<bVk5Y4o2
+Z55 VA_iZaedYYIi>:]^mUY4Qd3
 R14
 R15
-Z56 !s100 e>a7@d=[NKf^:O<kB14o?0
+Z56 !s100 KcOUbZL4`37Oig=d;Zc5c0
 Esum_of_minterms
 Z57 w1519867924
 R9
