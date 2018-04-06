@@ -24,11 +24,12 @@
 error "Error: This file can only be used with Precision version 2003c or later." "load_project failed" E_NEW_PROJECT
 #</PROJFILE>
 #<OBJ name='project' version='0'>
+#  <PROP key='defimpl' type='ESVT_STRING' value='registers_min_max_impl_7' />
 #  <PROP key='usetempdir' type='ESVT_BOOL' value='false' />
 #  <OBJ name='impl' version='0'>
 #    <PROP key='name' type='ESVT_STRING' value='registers_min_max_impl_7' />
 #    <PROP key='comment' type='ESVT_STRING' value='' />
-#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='registers_min_max' />
 #    <PROP key='impltype' type='ESVT_STRING' value='default' />
 #  </OBJ>
 #</OBJ>

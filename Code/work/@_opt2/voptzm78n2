@@ -1,9 +1,9 @@
 m255
 K3
 T_opt2
-Z0 VFKIS:O>lhkloaJD6HMA[02
-Z1 04 17 4 work registers_min_max arch 1
-Z2 =1-1866da08790a-5ac664d7-d4a4b-9c3
+Z0 Vj_n2Bm5l6;=P6AL9aFn@@0
+Z1 04 9 3 work registers rtl 1
+Z2 =1-1866da08790a-5ac66c11-e120c-1448
 Z3 o-quiet -auto_acc_if_foreign -work work
 Z4 n@_opt2
 Z5 OL;O;6.6g;45
@@ -105,129 +105,159 @@ R20
 R21
 R15
 Z46 !s100 1JeV?f`OWXa1@IHk>Bc>63
-Eregisters_min_max
-Z47 w1522876320
+Eregisters
+Z47 w1522953176
 Z48 DPx17 __model_tech/ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
 Z49 DPx17 __model_tech/ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
 Z50 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
 32
 R39
-Z51 8registers_min_max.vhd
-Z52 Fregisters_min_max.vhd
+Z51 8registers.vhd
+Z52 Fregisters.vhd
 l0
-L5
-Z53 V]e0:ZR6[W;BgIe5FAVbPz0
+L4
+Z53 VXQ]T_cR2`UEc4TN@N9CdS2
 R14
 R15
-Z54 !s100 edoCMnOHaOdPEdI=Uebo02
-Aarch
+Z54 !s100 H^NgHh26hJeV:?;;KbFEM0
+Artl
 R48
 R49
 R50
-DEx40 /nfs/home/x/x_ti/Modelsim/VHDL/Code/work 17 registers_min_max 0 22 ]e0:ZR6[W;BgIe5FAVbPz0
+DEx40 /nfs/home/x/x_ti/Modelsim/VHDL/Code/work 9 registers 0 22 XQ]T_cR2`UEc4TN@N9CdS2
 32
 Mx3 17 __model_tech/ieee 14 std_logic_1164
 Mx2 17 __model_tech/ieee 18 std_logic_unsigned
 Mx1 17 __model_tech/ieee 15 std_logic_arith
+l11
+L10
+Z55 V_GG008`QiFHNa]Hd20bNB0
+R14
+R15
+Z56 !s100 zINT9VK6K7h01LO0az3ng1
+Eregisters_min_max
+Z57 w1522876320
+R7
+R8
+R9
+R39
+Z58 8registers_min_max.vhd
+Z59 Fregisters_min_max.vhd
+l0
+L5
+Z60 V]e0:ZR6[W;BgIe5FAVbPz0
+R14
+32
+R15
+Z61 !s100 edoCMnOHaOdPEdI=Uebo02
+Aarch
+R7
+R8
+R9
+Z62 DEx4 work 17 registers_min_max 0 22 ]e0:ZR6[W;BgIe5FAVbPz0
 l24
 L15
-Z55 VA_iZaedYYIi>:]^mUY4Qd3
+Z63 VA_iZaedYYIi>:]^mUY4Qd3
 R14
+32
+R19
+R20
+R21
 R15
-Z56 !s100 KcOUbZL4`37Oig=d;Zc5c0
+Z64 !s100 KcOUbZL4`37Oig=d;Zc5c0
 Esum_of_minterms
-Z57 w1519867924
+Z65 w1519867924
 R9
 R10
-Z58 8sum_of_minterms_csa.vhd
-Z59 Fsum_of_minterms_csa.vhd
+Z66 8sum_of_minterms_csa.vhd
+Z67 Fsum_of_minterms_csa.vhd
 l0
 L4
-Z60 VM?N78bRg184lhhEclF:gF3
+Z68 VM?N78bRg184lhhEclF:gF3
 R14
 32
 R15
-Z61 !s100 fbeEE]b305nRdK6YVV5cL0
+Z69 !s100 fbeEE]b305nRdK6YVV5cL0
 Aarch
 R9
-Z62 DEx4 work 15 sum_of_minterms 0 22 M?N78bRg184lhhEclF:gF3
+Z70 DEx4 work 15 sum_of_minterms 0 22 M?N78bRg184lhhEclF:gF3
 l15
 L9
-Z63 VLS=X2oMOnjK<?3MQ=Y`oW0
+Z71 VLS=X2oMOnjK<?3MQ=Y`oW0
 R14
 32
 R36
 R15
-Z64 !s100 `1]efSG9XKPM5elVcf[7]0
+Z72 !s100 `1]efSG9XKPM5elVcf[7]0
 Esum_of_minterms_csa
-Z65 w1519869011
+Z73 w1519869011
 R9
 R10
-R58
-R59
+R66
+R67
 l0
 L4
-Z66 VMZdfiQE;UbjC]gOYBgJbh0
+Z74 VMZdfiQE;UbjC]gOYBgJbh0
 R14
 32
 R15
-Z67 !s100 2=kZoo6j[L>E<_BhIlahJ3
+Z75 !s100 2=kZoo6j[L>E<_BhIlahJ3
 Aarch
 R9
-Z68 DEx4 work 19 sum_of_minterms_csa 0 22 MZdfiQE;UbjC]gOYBgJbh0
+Z76 DEx4 work 19 sum_of_minterms_csa 0 22 MZdfiQE;UbjC]gOYBgJbh0
 l15
 L9
-Z69 VXG?Hba?6b7GEnUehzmA]C3
+Z77 VXG?Hba?6b7GEnUehzmA]C3
 R14
 32
 R36
 R15
-Z70 !s100 `CGg@na9<LohP_DKzMbBC0
+Z78 !s100 `CGg@na9<LohP_DKzMbBC0
 Eted_and3
-Z71 w1518040241
+Z79 w1518040241
 R9
 R10
-Z72 8tedand3.vhd
-Z73 Ftedand3.vhd
+Z80 8tedand3.vhd
+Z81 Ftedand3.vhd
 l0
 L4
-Z74 VB`6`LOg2OcnVWfUnPlL^Z3
+Z82 VB`6`LOg2OcnVWfUnPlL^Z3
 R14
 32
 R15
-Z75 !s100 @6Ak?2^kdX=JVBnLO>fQ53
+Z83 !s100 @6Ak?2^kdX=JVBnLO>fQ53
 Ated_arch
 R9
-Z76 DEx4 work 8 ted_and3 0 22 B`6`LOg2OcnVWfUnPlL^Z3
+Z84 DEx4 work 8 ted_and3 0 22 B`6`LOg2OcnVWfUnPlL^Z3
 l9
 L8
-Z77 VMB;adbaNed=FHXZD]Y5D]2
+Z85 VMB;adbaNed=FHXZD]Y5D]2
 R14
 32
 R36
 R15
-Z78 !s100 ^aTWTb_UoQ?e`CHXgHl:41
+Z86 !s100 ^aTWTb_UoQ?e`CHXgHl:41
 Eted_or3
-Z79 w1518039351
+Z87 w1518039351
 R9
 R10
-Z80 8tedor3.vhd
-Z81 Ftedor3.vhd
+Z88 8tedor3.vhd
+Z89 Ftedor3.vhd
 l0
 L4
-Z82 VQ`>go3IAC8LY2Nh?@d5>K1
+Z90 VQ`>go3IAC8LY2Nh?@d5>K1
 R14
 32
 R15
-Z83 !s100 k8@20K3Y^W4>n>2IDGa013
+Z91 !s100 k8@20K3Y^W4>n>2IDGa013
 Ated_arch
 R9
-Z84 DEx4 work 7 ted_or3 0 22 Q`>go3IAC8LY2Nh?@d5>K1
+Z92 DEx4 work 7 ted_or3 0 22 Q`>go3IAC8LY2Nh?@d5>K1
 l9
 L8
-Z85 V;_zQ:cS0a?F:=_7aT87[n0
+Z93 V;_zQ:cS0a?F:=_7aT87[n0
 R14
 32
 R36
 R15
-Z86 !s100 hfJC3?j[ePGPVh7KW5BDW3
+Z94 !s100 hfJC3?j[ePGPVh7KW5BDW3

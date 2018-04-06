@@ -94,3 +94,11 @@ compile
 # Info: [11019]: Total CPU time for synthesis: 0.6 s secs.
 # Info: [11020]: Overall running time for synthesis: 1.6 s secs.
 synthesize
+# COMMAND: save_project
+# Info: [9562]: Saved implementation registers_min_max_impl_7 in project /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max.psp.
+save_project
+# COMMAND: close_project -discard
+# Info: [9530]: Closed project: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/registers_min_max.psp.
+close_project -discard
+# COMMAND: exit
+exit
