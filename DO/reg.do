@@ -1,7 +1,7 @@
 
 add wave *
 
-force din 0000
+force din 1000
 force reset 0
 force clk 0
 force sel 00
@@ -13,7 +13,7 @@ run 1
 force clk 0
 run 1
 
-force din 0001
+force din 0110
 force clk 1
 run 1
 
@@ -21,7 +21,7 @@ force clk 0
 force sel 00
 run 1
 
-force din 0010
+force din 0101
 force clk 1
 run 1
 
