@@ -1,0 +1,109 @@
+//  Precision RTL Synthesis  64-bit 2016.1.0.15 (Production Release) Wed Jun  8 09:35:56 PDT 2016
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2016, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux x_ti@chameleon.encs.concordia.ca #1 SMP Wed Mar 7 13:12:24 CST 2018 3.10.0-693.21.1.el7.x86_64 x86_64
+//  
+//  Start time Wed Apr 11 15:54:18 2018
+
+***************************************************************
+Device Utilization for 2VP30ff896
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               22      556       3.96%
+Global Buffers                    1       16        6.25%
+LUTs                              11      27392     0.04%
+CLB Slices                        8       13696     0.06%
+Dffs or Latches                   16      29060     0.06%
+Block RAMs                        0       136       0.00%
+Block Multipliers                 0       136       0.00%
+Block Multiplier Dffs             0       4896      0.00%
+GT_CUSTOM                         0       8         0.00%
+---------------------------------------------------------------
+
+*************************************************
+
+Library: work    Cell: reg_scramble    View: arch
+
+*************************************************
+
+  Cell    Library  References     Total Area
+
+ BUFGP    xcv2p     1 x
+ FDE      xcv2p     8 x      1      8 Dffs or Latches
+ FD_1     xcv2p     8 x      1      8 Dffs or Latches
+ IBUF     xcv2p    12 x
+ LUT2     xcv2p     1 x      1      1 LUTs
+ LUT3     xcv2p    10 x      1     10 LUTs
+ OBUF     xcv2p     8 x
+
+ Number of ports :                           22
+ Number of nets :                            61
+ Number of instances :                       48
+ Number of references to this view :          0
+
+Total accumulated area : 
+ Number of Dffs or Latches :                 16
+ Number of LUTs :                            11
+ Number of gates :                           12
+ Number of accumulated instances :           48
+
+
+*****************************
+ IO Register Mapping Report
+*****************************
+Design: work.reg_scramble.arch
+
++-----------------+-----------+----------+----------+----------+
+| Port            | Direction |   INFF   |  OUTFF   |  TRIFF   |
++-----------------+-----------+----------+----------+----------+
+| keith(7)        | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith(6)        | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith(5)        | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith(4)        | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith(3)        | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith(2)        | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith(1)        | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith(0)        | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| reset           | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| clk             | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| ld              | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| scramble        | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| size(1)         | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| size(0)         | Input     |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith_out(7)    | Output    |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith_out(6)    | Output    |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith_out(5)    | Output    |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith_out(4)    | Output    |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith_out(3)    | Output    |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith_out(2)    | Output    |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith_out(1)    | Output    |          |          |          |
++-----------------+-----------+----------+----------+----------+
+| keith_out(0)    | Output    |          |          |          |
++-----------------+-----------+----------+----------+----------+
+Total registers mapped: 0

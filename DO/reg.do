@@ -45,11 +45,5 @@ force clk 0
 force sel 01
 run 1
 
-force reset 1
-run 1
-
-force reset 0
-run 1
-
 
 

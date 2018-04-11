@@ -2,17 +2,17 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-entity registers_min_max is
-	port ( 	din 	: 	in std_logic_vector(3 downto 0);
+entity registers_min_max_sig is
+	port ( 		din 	: 	in std_logic_vector(3 downto 0);
 			sel	:	in std_logic_vector(1 downto 0);
 			reset 	: 	in std_logic;
 			clk	:	in std_logic;
 			max_out	:	out std_logic_vector(3 downto 0);
 			min_out	:	out std_logic_vector(3 downto 0);
 			reg_out	:	out std_logic_vector(3 downto 0));
-end registers_min_max;
+end registers_min_max_sig;
 
-architecture arch of registers_min_max is
+architecture arch of registers_min_max_sig is
 
 signal register1 : std_logic_vector(3 downto 0) := "1000";
 signal register2 : std_logic_vector(3 downto 0) := "1000";
@@ -78,7 +78,7 @@ begin
 	end process selReg;
 
 
-	maxOut: process(clk) is
+	maxOut: process(clk, register1, register2, register3, register4) is
 	
 	variable tempMax : std_logic_vector(3 downto 0);
 	--variable maxComp: std_logic_vector(3 downto 0);
@@ -106,7 +106,7 @@ begin
 	end process maxOut;
 
 
-	minOut: process(clk) is
+	minOut: process(clk, register1, register2, register3, register4) is
 	
 	variable tempMin : std_logic_vector(3 downto 0);
 	--variable minComp : std_logic_vector(3 downto 0);

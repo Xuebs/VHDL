@@ -8,57 +8,12 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim registers 
+# vsim -do ../DO/scram.do reg_scramble 
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading work.registers(rtl)#1
+# Loading work.reg_scramble(arch)#1
+# do ../DO/scram.do 
 # 
 #  
-add wave \
-{sim:/registers/din1 } \
-{sim:/registers/din2 } \
-{sim:/registers/reset } \
-{sim:/registers/clk } \
-{sim:/registers/mick } \
-{sim:/registers/keith } 
-run 1
-force reset 1
-run 1
-force reset 0
-run 1
-force din 0000
-# ** Error: (vish-4008) Object 'din' not found.
-# 
-force di1n 0000
-# ** Error: (vish-4008) Object 'di1n' not found.
-# 
-force din1 0000
-force din2 0001
-force clk 1
-run 1
-force clk 0
-run 1
-force din1 0010
-force din2 0100
-force clk 1
-run 1
-force clk 0
-run 1
-force din1 0001
-force din2 1111
-force clk 1
-run 1
-force clk 0
-run 1
-force din1 0101
-force din2 1010
-force clk 1
-run 1
-force clk 0
-run 1
-force reset 1
-run 1
-force reset 0
-run 1

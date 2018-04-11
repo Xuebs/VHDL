@@ -1,0 +1,59 @@
+# Info: [9566]: Logging project transcript to file /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/reg_scramble_impl_3/precision.log
+# Info: [9566]: Logging suppressed messages transcript to file /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/reg_scramble_impl_3/precision.log.suppressed
+# Info: [9550]: Activated implementation reg_scramble_impl_3 in project /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/reg_scramble.psp.
+new_project -name reg_scramble -folder /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV -createimpl_name reg_scramble_impl_3 -force
+# COMMAND: add_input_file {../Code/reg_scramble.vhd}
+add_input_file {../Code/reg_scramble.vhd}
+# COMMAND: setup_design -manufacturer Xilinx -family "VIRTEX-II Pro" -part 2VP30ff896 -speed -7
+# Info: [15298]: Setting up the design to use synthesis library "xcv2p.syn"
+# Info: [575]: The global max fanout is currently set to 10000 for Xilinx - VIRTEX-II Pro.
+# Info: [15324]: Setting Part to: "2VP30ff896".
+# Info: [15325]: Setting Process to: "7".
+# Info: [7512]: The place and route tool for current technology is ISE.
+setup_design -manufacturer Xilinx -family "VIRTEX-II Pro" -part 2VP30ff896 -speed -7
+# COMMAND: setup_design -max_fanout=10000
+# Info: [575]: The global max fanout is currently set to 10000 for Xilinx - VIRTEX-II Pro.
+setup_design -max_fanout=10000
+# COMMAND: compile
+# Info: [3022]: Reading file: /CMC/tools/mentor/precision/Mgc_home/pkgs/psr/techlibs/xcv2p.syn.
+# Info: [634]: Loading library initialization file /CMC/tools/mentor/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2016a.7
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2016a.7
+# Info: [42502]: Analyzing input file "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/reg_scramble.vhd" ...
+# Info: [659]: Top module of the design is set to: reg_scramble.
+# Info: [657]: Current working directory: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/reg_scramble_impl_3.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2016a.7
+# Info: [40000]: Last compiled on Jun  2 2016 06:11:46
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2016a.7
+# Info: [40000]: Last compiled on Jun  2 2016 06:47:43
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.reg_scramble(arch): Pre-processing...
+# Info: [44523]: Root Module work.reg_scramble(arch): Compiling...
+# Warning: [45702]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/reg_scramble.vhd", line 16: Initial value for mainRegister[7:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Info: [45193]: "/nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/../Code/reg_scramble.vhd", line 7: Net reset is unused after optimization
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 58.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [657]: Current working directory: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/reg_scramble_impl_3.
+# Info: [15330]: Doing rtl optimizations.
+# Info: [660]: Finished compiling design.
+compile
+# COMMAND: synthesize
+# Info: [657]: Current working directory: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/reg_scramble_impl_3.
+# Info: [15002]: Optimizing design view:.work.reg_scramble.arch
+# Info: [8048]: Added global buffer BUFGP for Port port:clk
+# Info: [3027]: Writing file: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/reg_scramble_impl_3/reg_scramble.edf.
+# Info: [3027]: Writing file: /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/reg_scramble_impl_3/reg_scramble.ucf.
+# Info: [660]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.1 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.2 s secs.
+synthesize
+# COMMAND: save_project
+# Info: [9562]: Saved implementation reg_scramble_impl_3 in project /nfs/home/x/x_ti/Modelsim/VHDL/FPGA_ADV/reg_scramble.psp.
+save_project
+# COMMAND: close_project -discard

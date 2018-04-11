@@ -1,0 +1,415 @@
+(edif reg_scramble 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2018 04 11 19 55 08)
+   (program "Precision RTL Synthesis " (version "64-bit 2016.1.0.15"))
+   (author "Mentor Graphics Corporation")))
+ (external xcv2p 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell OBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell IBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell FDE (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port C (direction INPUT))
+     (port CE (direction INPUT))
+     (port D (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell FD_1 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell LUT3 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I0 (direction INPUT))
+     (port I1 (direction INPUT))
+     (port I2 (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell LUT2 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I0 (direction INPUT))
+     (port I1 (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell BUFGP (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT))))))
+ (library work 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell reg_scramble (cellType GENERIC)
+   (view arch  (viewType NETLIST)
+    (interface 
+     (port (array (rename keith "keith(7:0)") 8 )(direction INPUT))
+     (port reset (direction INPUT))
+     (port clk (direction INPUT))
+     (port ld (direction INPUT))
+     (port scramble (direction INPUT))
+     (port (array (rename size "size(1:0)") 2 )(direction INPUT))
+     (port (array (rename keith_out "keith_out(7:0)") 8 )(direction OUTPUT)))
+    (property AREA (string "12.000000"))
+    (property DESIGN_IS_RTL (string "NO"))
+    (property PART (string "2VP30ff896-7"))
+    (contents 
+     (instance (rename keith_out_obuf_0_ "keith_out_obuf(0)") (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance (rename keith_out_obuf_1_ "keith_out_obuf(1)") (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance (rename keith_out_obuf_2_ "keith_out_obuf(2)") (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance (rename keith_out_obuf_3_ "keith_out_obuf(3)") (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance (rename keith_out_obuf_4_ "keith_out_obuf(4)") (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance (rename keith_out_obuf_5_ "keith_out_obuf(5)") (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance (rename keith_out_obuf_6_ "keith_out_obuf(6)") (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance (rename keith_out_obuf_7_ "keith_out_obuf(7)") (viewRef NETLIST  (cellRef OBUF (libraryRef xcv2p ))))
+     (instance (rename size_ibuf_0_ "size_ibuf(0)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance (rename size_ibuf_1_ "size_ibuf(1)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance scramble_ibuf (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance ld_ibuf (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance (rename keith_ibuf_0_ "keith_ibuf(0)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance (rename keith_ibuf_1_ "keith_ibuf(1)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance (rename keith_ibuf_2_ "keith_ibuf(2)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance (rename keith_ibuf_3_ "keith_ibuf(3)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance (rename keith_ibuf_4_ "keith_ibuf(4)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance (rename keith_ibuf_5_ "keith_ibuf(5)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance (rename keith_ibuf_6_ "keith_ibuf(6)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance (rename keith_ibuf_7_ "keith_ibuf(7)") (viewRef NETLIST  (cellRef IBUF (libraryRef xcv2p ))))
+     (instance (rename reg_mainRegister_7_ "reg_mainRegister(7)") (viewRef NETLIST  (cellRef FDE (libraryRef xcv2p ))))
+     (instance (rename reg_mainRegister_6_ "reg_mainRegister(6)") (viewRef NETLIST  (cellRef FDE (libraryRef xcv2p ))))
+     (instance (rename reg_mainRegister_5_ "reg_mainRegister(5)") (viewRef NETLIST  (cellRef FDE (libraryRef xcv2p ))))
+     (instance (rename reg_mainRegister_4_ "reg_mainRegister(4)") (viewRef NETLIST  (cellRef FDE (libraryRef xcv2p ))))
+     (instance (rename reg_mainRegister_3_ "reg_mainRegister(3)") (viewRef NETLIST  (cellRef FDE (libraryRef xcv2p ))))
+     (instance (rename reg_mainRegister_2_ "reg_mainRegister(2)") (viewRef NETLIST  (cellRef FDE (libraryRef xcv2p ))))
+     (instance (rename reg_mainRegister_1_ "reg_mainRegister(1)") (viewRef NETLIST  (cellRef FDE (libraryRef xcv2p ))))
+     (instance (rename reg_mainRegister_0_ "reg_mainRegister(0)") (viewRef NETLIST  (cellRef FDE (libraryRef xcv2p ))))
+     (instance (rename reg_keith_out_7_ "reg_keith_out(7)") (viewRef NETLIST  (cellRef FD_1 (libraryRef xcv2p ))))
+     (instance (rename reg_keith_out_6_ "reg_keith_out(6)") (viewRef NETLIST  (cellRef FD_1 (libraryRef xcv2p ))))
+     (instance (rename reg_keith_out_5_ "reg_keith_out(5)") (viewRef NETLIST  (cellRef FD_1 (libraryRef xcv2p ))))
+     (instance (rename reg_keith_out_4_ "reg_keith_out(4)") (viewRef NETLIST  (cellRef FD_1 (libraryRef xcv2p ))))
+     (instance (rename reg_keith_out_3_ "reg_keith_out(3)") (viewRef NETLIST  (cellRef FD_1 (libraryRef xcv2p ))))
+     (instance (rename reg_keith_out_2_ "reg_keith_out(2)") (viewRef NETLIST  (cellRef FD_1 (libraryRef xcv2p ))))
+     (instance (rename reg_keith_out_1_ "reg_keith_out(1)") (viewRef NETLIST  (cellRef FD_1 (libraryRef xcv2p ))))
+     (instance (rename reg_keith_out_0_ "reg_keith_out(0)") (viewRef NETLIST  (cellRef FD_1 (libraryRef xcv2p ))))
+     (instance ix27555z1516 (viewRef NETLIST  (cellRef LUT3 (libraryRef xcv2p )))
+      (property INIT (string "CA")))
+     (instance ix28552z1486 (viewRef NETLIST  (cellRef LUT3 (libraryRef xcv2p )))
+      (property INIT (string "AC")))
+     (instance ix29549z1530 (viewRef NETLIST  (cellRef LUT3 (libraryRef xcv2p )))
+      (property INIT (string "D8")))
+     (instance ix30546z1530 (viewRef NETLIST  (cellRef LUT3 (libraryRef xcv2p )))
+      (property INIT (string "D8")))
+     (instance ix31543z1530 (viewRef NETLIST  (cellRef LUT3 (libraryRef xcv2p )))
+      (property INIT (string "D8")))
+     (instance ix32540z1530 (viewRef NETLIST  (cellRef LUT3 (libraryRef xcv2p )))
+      (property INIT (string "D8")))
+     (instance ix33537z1530 (viewRef NETLIST  (cellRef LUT3 (libraryRef xcv2p )))
+      (property INIT (string "D8")))
+     (instance ix34534z1530 (viewRef NETLIST  (cellRef LUT3 (libraryRef xcv2p )))
+      (property INIT (string "D8")))
+     (instance ix31870z1482 (viewRef NETLIST  (cellRef LUT3 (libraryRef xcv2p )))
+      (property INIT (string "A8")))
+     (instance ix33864z1322 (viewRef NETLIST  (cellRef LUT2 (libraryRef xcv2p )))
+      (property INIT (string "8")))
+     (instance ix36855z1442 (viewRef NETLIST  (cellRef LUT3 (libraryRef xcv2p )))
+      (property INIT (string "80")))
+     (instance clk_ibuf (viewRef NETLIST  (cellRef BUFGP (libraryRef xcv2p ))))
+     (net (rename keith_7_ "keith(7)") 
+      (joined 
+       (portRef (member keith 0))
+       (portRef I (instanceRef keith_ibuf_7_ ))))
+     (net (rename keith_6_ "keith(6)") 
+      (joined 
+       (portRef (member keith 1))
+       (portRef I (instanceRef keith_ibuf_6_ ))))
+     (net (rename keith_5_ "keith(5)") 
+      (joined 
+       (portRef (member keith 2))
+       (portRef I (instanceRef keith_ibuf_5_ ))))
+     (net (rename keith_4_ "keith(4)") 
+      (joined 
+       (portRef (member keith 3))
+       (portRef I (instanceRef keith_ibuf_4_ ))))
+     (net (rename keith_3_ "keith(3)") 
+      (joined 
+       (portRef (member keith 4))
+       (portRef I (instanceRef keith_ibuf_3_ ))))
+     (net (rename keith_2_ "keith(2)") 
+      (joined 
+       (portRef (member keith 5))
+       (portRef I (instanceRef keith_ibuf_2_ ))))
+     (net (rename keith_1_ "keith(1)") 
+      (joined 
+       (portRef (member keith 6))
+       (portRef I (instanceRef keith_ibuf_1_ ))))
+     (net (rename keith_0_ "keith(0)") 
+      (joined 
+       (portRef (member keith 7))
+       (portRef I (instanceRef keith_ibuf_0_ ))))
+     (net clk 
+      (joined 
+       (portRef clk )
+       (portRef I (instanceRef clk_ibuf ))))
+     (net ld 
+      (joined 
+       (portRef ld )
+       (portRef I (instanceRef ld_ibuf ))))
+     (net scramble 
+      (joined 
+       (portRef scramble )
+       (portRef I (instanceRef scramble_ibuf ))))
+     (net (rename size_1_ "size(1)") 
+      (joined 
+       (portRef (member size 0))
+       (portRef I (instanceRef size_ibuf_1_ ))))
+     (net (rename size_0_ "size(0)") 
+      (joined 
+       (portRef (member size 1))
+       (portRef I (instanceRef size_ibuf_0_ ))))
+     (net (rename keith_out_dup_0_7_ "keith_out_dup_0(7)") 
+      (joined 
+       (portRef Q (instanceRef reg_keith_out_7_ ))
+       (portRef I (instanceRef keith_out_obuf_7_ ))))
+     (net (rename keith_out_dup_0_6_ "keith_out_dup_0(6)") 
+      (joined 
+       (portRef Q (instanceRef reg_keith_out_6_ ))
+       (portRef I (instanceRef keith_out_obuf_6_ ))))
+     (net (rename keith_out_dup_0_5_ "keith_out_dup_0(5)") 
+      (joined 
+       (portRef Q (instanceRef reg_keith_out_5_ ))
+       (portRef I (instanceRef keith_out_obuf_5_ ))))
+     (net (rename keith_out_dup_0_4_ "keith_out_dup_0(4)") 
+      (joined 
+       (portRef Q (instanceRef reg_keith_out_4_ ))
+       (portRef I (instanceRef keith_out_obuf_4_ ))))
+     (net (rename keith_out_dup_0_3_ "keith_out_dup_0(3)") 
+      (joined 
+       (portRef Q (instanceRef reg_keith_out_3_ ))
+       (portRef I (instanceRef keith_out_obuf_3_ ))))
+     (net (rename keith_out_dup_0_2_ "keith_out_dup_0(2)") 
+      (joined 
+       (portRef Q (instanceRef reg_keith_out_2_ ))
+       (portRef I (instanceRef keith_out_obuf_2_ ))))
+     (net (rename keith_out_dup_0_1_ "keith_out_dup_0(1)") 
+      (joined 
+       (portRef Q (instanceRef reg_keith_out_1_ ))
+       (portRef I (instanceRef keith_out_obuf_1_ ))))
+     (net (rename keith_out_dup_0_0_ "keith_out_dup_0(0)") 
+      (joined 
+       (portRef Q (instanceRef reg_keith_out_0_ ))
+       (portRef I (instanceRef keith_out_obuf_0_ ))))
+     (net (rename mainRegister_7_ "mainRegister(7)") 
+      (joined 
+       (portRef Q (instanceRef reg_mainRegister_7_ ))
+       (portRef I0 (instanceRef ix27555z1516 ))
+       (portRef I0 (instanceRef ix28552z1486 ))))
+     (net (rename mainRegister_6_ "mainRegister(6)") 
+      (joined 
+       (portRef Q (instanceRef reg_mainRegister_6_ ))
+       (portRef I1 (instanceRef ix27555z1516 ))
+       (portRef I1 (instanceRef ix28552z1486 ))))
+     (net (rename mainRegister_5_ "mainRegister(5)") 
+      (joined 
+       (portRef Q (instanceRef reg_mainRegister_5_ ))
+       (portRef I1 (instanceRef ix30546z1530 ))
+       (portRef I2 (instanceRef ix29549z1530 ))))
+     (net (rename mainRegister_4_ "mainRegister(4)") 
+      (joined 
+       (portRef Q (instanceRef reg_mainRegister_4_ ))
+       (portRef I1 (instanceRef ix29549z1530 ))
+       (portRef I2 (instanceRef ix30546z1530 ))))
+     (net (rename mainRegister_3_ "mainRegister(3)") 
+      (joined 
+       (portRef Q (instanceRef reg_mainRegister_3_ ))
+       (portRef I1 (instanceRef ix32540z1530 ))
+       (portRef I2 (instanceRef ix31543z1530 ))))
+     (net (rename mainRegister_2_ "mainRegister(2)") 
+      (joined 
+       (portRef Q (instanceRef reg_mainRegister_2_ ))
+       (portRef I1 (instanceRef ix31543z1530 ))
+       (portRef I2 (instanceRef ix32540z1530 ))))
+     (net (rename mainRegister_1_ "mainRegister(1)") 
+      (joined 
+       (portRef Q (instanceRef reg_mainRegister_1_ ))
+       (portRef I1 (instanceRef ix34534z1530 ))
+       (portRef I2 (instanceRef ix33537z1530 ))))
+     (net (rename mainRegister_0_ "mainRegister(0)") 
+      (joined 
+       (portRef Q (instanceRef reg_mainRegister_0_ ))
+       (portRef I1 (instanceRef ix33537z1530 ))
+       (portRef I2 (instanceRef ix34534z1530 ))))
+     (net (rename keith_int_7_ "keith_int(7)") 
+      (joined 
+       (portRef O (instanceRef keith_ibuf_7_ ))
+       (portRef D (instanceRef reg_mainRegister_7_ ))))
+     (net (rename keith_int_6_ "keith_int(6)") 
+      (joined 
+       (portRef O (instanceRef keith_ibuf_6_ ))
+       (portRef D (instanceRef reg_mainRegister_6_ ))))
+     (net (rename keith_int_5_ "keith_int(5)") 
+      (joined 
+       (portRef O (instanceRef keith_ibuf_5_ ))
+       (portRef D (instanceRef reg_mainRegister_5_ ))))
+     (net (rename keith_int_4_ "keith_int(4)") 
+      (joined 
+       (portRef O (instanceRef keith_ibuf_4_ ))
+       (portRef D (instanceRef reg_mainRegister_4_ ))))
+     (net (rename keith_int_3_ "keith_int(3)") 
+      (joined 
+       (portRef O (instanceRef keith_ibuf_3_ ))
+       (portRef D (instanceRef reg_mainRegister_3_ ))))
+     (net (rename keith_int_2_ "keith_int(2)") 
+      (joined 
+       (portRef O (instanceRef keith_ibuf_2_ ))
+       (portRef D (instanceRef reg_mainRegister_2_ ))))
+     (net (rename keith_int_1_ "keith_int(1)") 
+      (joined 
+       (portRef O (instanceRef keith_ibuf_1_ ))
+       (portRef D (instanceRef reg_mainRegister_1_ ))))
+     (net (rename keith_int_0_ "keith_int(0)") 
+      (joined 
+       (portRef O (instanceRef keith_ibuf_0_ ))
+       (portRef D (instanceRef reg_mainRegister_0_ ))))
+     (net clk_int 
+      (joined 
+       (portRef O (instanceRef clk_ibuf ))
+       (portRef C (instanceRef reg_mainRegister_0_ ))
+       (portRef C (instanceRef reg_mainRegister_1_ ))
+       (portRef C (instanceRef reg_mainRegister_2_ ))
+       (portRef C (instanceRef reg_mainRegister_3_ ))
+       (portRef C (instanceRef reg_mainRegister_4_ ))
+       (portRef C (instanceRef reg_mainRegister_5_ ))
+       (portRef C (instanceRef reg_mainRegister_6_ ))
+       (portRef C (instanceRef reg_mainRegister_7_ ))
+       (portRef C (instanceRef reg_keith_out_7_ ))
+       (portRef C (instanceRef reg_keith_out_6_ ))
+       (portRef C (instanceRef reg_keith_out_5_ ))
+       (portRef C (instanceRef reg_keith_out_4_ ))
+       (portRef C (instanceRef reg_keith_out_3_ ))
+       (portRef C (instanceRef reg_keith_out_2_ ))
+       (portRef C (instanceRef reg_keith_out_1_ ))
+       (portRef C (instanceRef reg_keith_out_0_ ))))
+     (net ld_int 
+      (joined 
+       (portRef O (instanceRef ld_ibuf ))
+       (portRef I0 (instanceRef ix31870z1482 ))
+       (portRef I0 (instanceRef ix33864z1322 ))
+       (portRef CE (instanceRef reg_mainRegister_0_ ))
+       (portRef CE (instanceRef reg_mainRegister_1_ ))
+       (portRef I1 (instanceRef ix36855z1442 ))))
+     (net scramble_int 
+      (joined 
+       (portRef O (instanceRef scramble_ibuf ))
+       (portRef I2 (instanceRef ix27555z1516 ))
+       (portRef I2 (instanceRef ix28552z1486 ))
+       (portRef I0 (instanceRef ix29549z1530 ))
+       (portRef I0 (instanceRef ix30546z1530 ))
+       (portRef I0 (instanceRef ix31543z1530 ))
+       (portRef I0 (instanceRef ix32540z1530 ))
+       (portRef I0 (instanceRef ix33537z1530 ))
+       (portRef I0 (instanceRef ix34534z1530 ))))
+     (net (rename size_int_1_ "size_int(1)") 
+      (joined 
+       (portRef O (instanceRef size_ibuf_1_ ))
+       (portRef I1 (instanceRef ix33864z1322 ))
+       (portRef I2 (instanceRef ix36855z1442 ))
+       (portRef I1 (instanceRef ix31870z1482 ))))
+     (net (rename size_int_0_ "size_int(0)") 
+      (joined 
+       (portRef O (instanceRef size_ibuf_0_ ))
+       (portRef I2 (instanceRef ix31870z1482 ))
+       (portRef I0 (instanceRef ix36855z1442 ))))
+     (net (rename keith_out_0_ "keith_out(0)") 
+      (joined 
+       (portRef (member keith_out 7))
+       (portRef O (instanceRef keith_out_obuf_0_ ))))
+     (net (rename keith_out_1_ "keith_out(1)") 
+      (joined 
+       (portRef (member keith_out 6))
+       (portRef O (instanceRef keith_out_obuf_1_ ))))
+     (net (rename keith_out_2_ "keith_out(2)") 
+      (joined 
+       (portRef (member keith_out 5))
+       (portRef O (instanceRef keith_out_obuf_2_ ))))
+     (net (rename keith_out_3_ "keith_out(3)") 
+      (joined 
+       (portRef (member keith_out 4))
+       (portRef O (instanceRef keith_out_obuf_3_ ))))
+     (net (rename keith_out_4_ "keith_out(4)") 
+      (joined 
+       (portRef (member keith_out 3))
+       (portRef O (instanceRef keith_out_obuf_4_ ))))
+     (net (rename keith_out_5_ "keith_out(5)") 
+      (joined 
+       (portRef (member keith_out 2))
+       (portRef O (instanceRef keith_out_obuf_5_ ))))
+     (net (rename keith_out_6_ "keith_out(6)") 
+      (joined 
+       (portRef (member keith_out 1))
+       (portRef O (instanceRef keith_out_obuf_6_ ))))
+     (net (rename keith_out_7_ "keith_out(7)") 
+      (joined 
+       (portRef (member keith_out 0))
+       (portRef O (instanceRef keith_out_obuf_7_ ))))
+     (net (rename keith_out_0n4ss1_7_ "keith_out_0n4ss1(7)") 
+      (joined 
+       (portRef O (instanceRef ix27555z1516 ))
+       (portRef D (instanceRef reg_keith_out_7_ ))))
+     (net (rename keith_out_0n4ss1_6_ "keith_out_0n4ss1(6)") 
+      (joined 
+       (portRef O (instanceRef ix28552z1486 ))
+       (portRef D (instanceRef reg_keith_out_6_ ))))
+     (net (rename keith_out_0n4ss1_5_ "keith_out_0n4ss1(5)") 
+      (joined 
+       (portRef O (instanceRef ix29549z1530 ))
+       (portRef D (instanceRef reg_keith_out_5_ ))))
+     (net (rename keith_out_0n4ss1_4_ "keith_out_0n4ss1(4)") 
+      (joined 
+       (portRef O (instanceRef ix30546z1530 ))
+       (portRef D (instanceRef reg_keith_out_4_ ))))
+     (net (rename keith_out_0n4ss1_3_ "keith_out_0n4ss1(3)") 
+      (joined 
+       (portRef O (instanceRef ix31543z1530 ))
+       (portRef D (instanceRef reg_keith_out_3_ ))))
+     (net (rename keith_out_0n4ss1_2_ "keith_out_0n4ss1(2)") 
+      (joined 
+       (portRef O (instanceRef ix32540z1530 ))
+       (portRef D (instanceRef reg_keith_out_2_ ))))
+     (net (rename keith_out_0n4ss1_1_ "keith_out_0n4ss1(1)") 
+      (joined 
+       (portRef O (instanceRef ix33537z1530 ))
+       (portRef D (instanceRef reg_keith_out_1_ ))))
+     (net (rename keith_out_0n4ss1_0_ "keith_out_0n4ss1(0)") 
+      (joined 
+       (portRef O (instanceRef ix34534z1530 ))
+       (portRef D (instanceRef reg_keith_out_0_ ))))
+     (net nx31870z1 
+      (joined 
+       (portRef O (instanceRef ix31870z1482 ))
+       (portRef CE (instanceRef reg_mainRegister_2_ ))
+       (portRef CE (instanceRef reg_mainRegister_3_ ))))
+     (net nx33864z1 
+      (joined 
+       (portRef O (instanceRef ix33864z1322 ))
+       (portRef CE (instanceRef reg_mainRegister_4_ ))
+       (portRef CE (instanceRef reg_mainRegister_5_ ))))
+     (net nx36855z1 
+      (joined 
+       (portRef O (instanceRef ix36855z1442 ))
+       (portRef CE (instanceRef reg_mainRegister_6_ ))
+       (portRef CE (instanceRef reg_mainRegister_7_ ))))))))
+ (design reg_scramble (cellRef reg_scramble (libraryRef work ))
+  (property PART (string "2VP30ff896-7"))))
